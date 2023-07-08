@@ -1,48 +1,13 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="assets/images/logo.png">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sản phẩm</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Danh mục sản phẩm
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#"></a></li>
-              <li><a class="dropdown-item" href="#"></a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#"></a></li>
-            </ul>
-          </li>
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">
-                Search
-            </button>
-        </form>
-        </ul>
-        <div class="cart-login">
-            <div class="cart">
-                <a href="cart.html">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span class="cart-counter">0</span>
-                </a>
-            </div>
-            <div class="login">
-              <a href="login.html">Đăng nhập</a>
-            </div>
-        </div>    
-      </div>
-    </div>
-  </nav>
+<nav class="nav">
+  <h1><a routerLink=""><img src="/assets/images/logo.png"></a></h1>
+  <div class="nav-search">
+    <input type="text" placeholder="Tìm kiếm sản phẩm">
+    <button>Tìm kiếm</button>
+  </div>
+  <ul>
+    <li><a routerLink="/seller-auth">Seller</a></li>
+    <li><a routerLink="">Trang chủ</a></li>
+    <li><a href="#">Đăng nhập</a></li>
+    <li><a href="#">Giỏ hàng(0)</a></li>
+  </ul>
+</nav>
