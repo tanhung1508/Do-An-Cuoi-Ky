@@ -13,6 +13,7 @@ import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { ProductComponent } from './product/product.component';
 import { BannerComponent } from './banner/banner.component';
 import { SignupSellerComponent } from './seller-auth/signup-seller/signup-seller.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { SignupSellerComponent } from './seller-auth/signup-seller/signup-seller
     ProductComponent,
     BannerComponent,
     SignupSellerComponent,
+    LoginComponent,
   ],
   imports: [
     AppRoutingModule,
