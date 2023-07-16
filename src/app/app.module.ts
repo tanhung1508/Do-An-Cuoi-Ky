@@ -11,6 +11,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { SellerAuthComponent } from './seller-auth/seller-auth.component';
 import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { ProductComponent } from './product/product.component';
+import { BannerComponent } from './banner/banner.component';
+import { SignupSellerComponent } from './seller-auth/signup-seller/signup-seller.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ProductComponent } from './product/product.component';
     HomeComponent,
     SellerAuthComponent,
     SellerHomeComponent,
-    ProductComponent
+    ProductComponent,
+    BannerComponent,
+    SignupSellerComponent,
   ],
   imports: [
     AppRoutingModule,

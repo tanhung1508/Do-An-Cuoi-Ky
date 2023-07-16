@@ -1,12 +1,13 @@
 export interface SignUp{
     name: string,
-    passord: string,
-    email: string
+    password: string,
+    email: string,
+    phone: string
 }
 
 export interface login {
-    email: String;
-    password: String;
+    email: String,
+    password: String
 }
 
 export interface product{
@@ -33,7 +34,7 @@ export interface product{
     userId:number
   }
   
-  export interface priceSummary{
+  export interface price{
     price:number,
     discount:number,
     tax:number,

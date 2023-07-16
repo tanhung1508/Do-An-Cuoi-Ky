@@ -21,18 +21,23 @@
     margin-top: 10px;
     flex: 1;
     display: flex;
+    border-right: none;
     margin-left: 5%;
     margin-right: 5%;
+    
 }
 .nav .nav-search input{
     flex: 1;
     color: #274d5a;
     border: 1px solid #274d5a;
-    height:  35px;
-    border-right: 0px;
+    height:  39px;
+    border-right: none;
 }
 .nav .nav-search button{
     color: #274d5a;
     border: 1px solid #274d5a;
-    height:  35px;
+    height:  39px;
+}
+.nav .logo{
+    margin-left: 25px;
 }

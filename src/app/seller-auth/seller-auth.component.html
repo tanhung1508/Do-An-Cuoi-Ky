@@ -1,10 +1,25 @@
-<div class="seller-auth">
-    <div *ngIf="!showLogin" class="sign-up">
-        <h1>Đăng ký</h1>
-        <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="common-form">
-            <input type="text" class="form-input" placeholder="Nhập tên" name="name" ngModel />
-            <input type="password" class="form-input" placeholder="Nhập mật khẩu" name="password" ngModel />
-            <input type="text" class="form-input" placeholder="Nhập Email" name="email" ngModel />
-            <button class="form-button">Đăng ký</button>
-        </form>
+<div class="seller-login">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Đăng nhập</h1>
+                </div>
+                <form>
+                    <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail" class="form-label">Tài khoản email</label>
+                            <input ngModel name="email" type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword" class="form-label">Mật khẩu</label>
+                            <input ngModel name="password" type="password" class="form-control" id="exampleInputPassword">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2">Đăng nhập</button>
+                    </form>
+                    <a style="color: azure; margin-top: 10px;" routerLink="/signup-seller">Bạn chưa có tài khoản? Hãy vào đây đăng ký!!! </a>
+                </form>
+            </div>
+        </div>
     </div>
+</div>

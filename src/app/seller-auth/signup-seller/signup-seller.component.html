@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Đăng ký tài khoản</h1>
+                </div>
+                <form>
+                    <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)">
+                        <div class="mb-3">
+                            <label for="exampleInputPassword" class="form-label">Tên người bán</label>
+                            <input ngModel name="name" type="text" class="form-control" id="exampleInputPassword">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword" class="form-label">Số điện thoại</label>
+                            <input ngModel name="phone" type="text" class="form-control" id="exampleInputPassword">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail" class="form-label">Tài khoản email</label>
+                            <input ngModel name="email" type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHlep">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword" class="form-label">Mật khẩu</label>
+                            <input ngModel name="password" type="password" class="form-control" id="exampleInputPassword">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Đăng ký</button>
+                    </form>
+                    <a style="color: azure; margin-top: 10px;" routerLink="/seller-auth">Bạn đã đăng ký? Hãy đăng nhập vào tài khoản!!!</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
