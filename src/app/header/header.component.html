@@ -1,4 +1,4 @@
-<nav class="nav">
+<!-- <nav class="nav">
   <div class="header_section header_bg">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a href="index.html" class="logo"><img src="assets/images/logo.png"></a>
@@ -6,12 +6,28 @@
         <input type="text" placeholder="Tìm kiếm sản phẩm">
         <button>Tìm kiếm</button>
       </div>
-      <ul>
-        <li><a routerLink="/seller-auth">Seller</a></li>
-        <li><a routerLink="">Trang chủ</a></li>
-        <li><a href="#">Đăng nhập</a></li>
-        <li><a href="#">Giỏ hàng(0)</a></li>
-      </ul>
+        <a routerLink="/seller-auth">Seller</a>
+        <a routerLink="">Trang chủ</a>
+        <a href="#">Giỏ hàng(0)</a>
+        <button class = "btnLogin-popup">Login</button>
     </nav>
   </div>
-</nav>
+</nav> -->
+<header>
+  <a href="index.html" class="logo"><img src="assets/images/logo.png"></a>
+  <div style = "border-bottom: 2px solid red;">  
+    <input type="text" style="width: 500px;border: none;" placeholder="Tìm kiếm sản phẩm" class = "input-search" > </div>
+  <!-- <button class = "serch">Tìm kiếm</button> -->
+  <span class="input-group-text"><i class="bi bi-search"></i></span>
+  <nav class="navigation">
+      <a routerLink="/seller-auth" >Seller</a>
+      <a routerLink="">Trang chủ</a>
+      <a href="#">Giỏ hàng(0)</a>
+      
+  </nav>
+  
+  <button class="btnLogin-popup" routerLink="/login">Login</button>
+
+</header>
+
+
