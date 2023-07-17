@@ -5,8 +5,12 @@ import { SellerAuthComponent } from "./seller-auth/seller-auth.component";
 import { SellerHomeComponent } from "./seller-home/seller-home.component";
 import { AuthGuard } from "./auth.guard";
 import { SignupSellerComponent } from "./seller-auth/signup-seller/signup-seller.component";
+
 import { LoginComponent } from "./login/login.component";
 import { RegisterComponent } from "./register/register.component";
+
+import { ProductComponent } from "./product/product.component";
+
 
 
 const appRoutes:Routes = [
@@ -28,6 +32,7 @@ const appRoutes:Routes = [
         component: SignupSellerComponent
     },
 
+
     {
         path: 'login',
         component: LoginComponent
@@ -35,7 +40,12 @@ const appRoutes:Routes = [
 
     {
         path: 'register',
-        component : RegisterComponent
+        component : RegisterComponent},
+
+    {
+        path: 'product',
+        component: ProductComponent
+
     }
 
 ]
