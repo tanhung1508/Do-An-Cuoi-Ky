@@ -13,7 +13,7 @@ header {
     top : 0;
     left : 0;
     width: 100%;
-    background: #fff;
+    background: #162938;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,6 +99,60 @@ header {
 }
 
 /* login */
+  .wrapper {
+    position: fixed;
+    
+    right: 50%;
+    left: 36%;
+    /* margin-top: 5%;
+    margin-bottom: 5%; */
+    transform: translate(0px, 0%);
+
+  }
+
+.center {
+            background-image: url('../images/img-6.png');
+            background-position: center;
+            background-size: cover;
+            padding: 50px 50px;
+            
+}
+.form-box-register{
+    position: fixed;
+    
+    right: 50%;
+    left: 36%;
+    /* margin-top: 5%;
+    margin-bottom: 5%; */
+    transform: translate(0px, 0%);
+}
+.form-box-registe.active-popup{
+    transform: scale(1);
+}
+.form-box-register .form-box1{
+    width: 100%;
+    padding: 40px;
+}
+
+
+.form-box-register{
+    position: relative;
+    width: 400px;
+    height: 520px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255, .5);
+    border-radius: 20px;
+    backdrop-filter:  blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0, .5);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    /* transform: scale(0); */
+    transition: transform .5s ease,height .2s ease;
+}
+   
+  
 .wrapper{
     position: relative;
     width: 400px;
@@ -112,7 +166,7 @@ header {
     text-align: center;
     align-items: center;
     overflow: hidden;
-    transform: scale(0);
+    /* transform: scale(0); */
     transition: transform .5s ease,height .2s ease;
 }
 .wrapper.active{
@@ -125,8 +179,6 @@ header {
     width: 100%;
     padding: 40px;
 }
-
-
 
 .wrapper .form-box.login{
     transition: transform .18s ease;
@@ -147,25 +199,31 @@ header {
     position: absolute;
     transform: translateX(400px);
 }
-
-.for-box h2{
+.form-box h2{
     font-size: 2em;
-    color: #162938;
+    color: #fff;
+    text-align: center;
+}
+.form-box1 h2{
+    font-size: 2em;
+    color: #fff;
     text-align: center;
 }
 .input-box {
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px sloid #162938;
+    border-bottom: 2px solid #fff;
+    
+    margin: 30px 0;
 }
 .input-box label {
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 5px;
     transform:  translateY(-50%);
     font-size: 1em;
-    color:#162938;
+    color:#fff;
     font-weight:  500;
     pointer-events: none;
     transition:  .5s;
@@ -175,7 +233,8 @@ header {
     top : -5px
 }
 
-.input-box input{
+
+.input-box .user-password{
     width: 100%;
     height: 100%;
     background: transparent;
@@ -186,10 +245,18 @@ header {
     font-weight: 600;
     padding: 0 35px 0 5px;
 }
+/* .input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color:#162938;
+    line-height: 57px;
+} */
 
 .remember-forgot{
+    width: 75%;
     font-size:  .9em;
-    color:#162938;
+    color:#fff;
     font-weight: 500px;
     margin:  -15px 0 15px ;
     justify-content: space-between;
@@ -198,39 +265,69 @@ header {
 
 .remember-forgot:hover{
     text-decoration:  underline;
+    color:#4ca6c9
 }
 
-.btn{
-    width: 100%;
+.login .btn{
+    width: 25%;
     height : 45px;
-    background : #162938;
     border:none;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 1em;
-    color: #fff;
+    color: #fff ;
     font-weight: 500;
+    margin-right: 100px;
+    
 }
+
+.login .btn:hover{
+    background: #b0b4cc;
+    color:#fff
+}
+/* 
+--buton dk */
+.login .btn-register{
+    width: 100%;
+    height : 45px;
+    border:none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff ;
+    font-weight: 500;
+    background-color: transparent;
+    transition: background-color 0.5s, opacity 0.5s;
+    
+}
+
+.login .btn-register:hover{
+    background: #b0b4cc;
+    color:#fff
+}
+
 
 .login-register {
     font-size: .9em;
-    color: #162938;
+    color: #fff;
     text-align: center;
     font-weight: 500;
     margin: 25px 0px 10px;
 }
 
 .login-register p a{
-    color:#162938;
+    color:#fff;
     text-decoration:  none;
     font-weight: 600;
 }
 .login-register p a:hover{
     text-decoration: underline;
+    color:#4ca6c9
 }
 
 .wrapper .form-box.register {
     position: absolute;
     transform:  translateX(400px);
-}
+} 
