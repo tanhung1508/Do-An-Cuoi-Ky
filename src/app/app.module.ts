@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -14,9 +15,13 @@ import { ProductComponent } from './product/product.component';
 import { BannerComponent } from './banner/banner.component';
 import { SignupSellerComponent } from './seller-auth/signup-seller/signup-seller.component';
 import { LoginComponent } from './login/login.component';
+
+import { RegisterComponent } from './register/register.component';
+
 import { ProductFiltersComponent } from './product/product-filters/product-filters.component';
 import { ProductListComponent } from './product/product-list/product-list.component';
 import { ProductItemComponent } from './product/product-list/product-item/product-item.component';
+
 
 @NgModule({
   declarations: [
@@ -30,9 +35,13 @@ import { ProductItemComponent } from './product/product-list/product-item/produc
     BannerComponent,
     SignupSellerComponent,
     LoginComponent,
+
+    RegisterComponent,
+
     ProductFiltersComponent,
     ProductListComponent,
     ProductItemComponent,
+
   ],
   imports: [
     AppRoutingModule,
