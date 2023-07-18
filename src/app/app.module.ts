@@ -21,6 +21,7 @@ import { RegisterComponent } from './register/register.component';
 import { ProductFiltersComponent } from './product/product-filters/product-filters.component';
 import { ProductListComponent } from './product/product-list/product-list.component';
 import { ProductItemComponent } from './product/product-list/product-item/product-item.component';
+import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { ProductItemComponent } from './product/product-list/product-item/produc
     ProductFiltersComponent,
     ProductListComponent,
     ProductItemComponent,
+    CartComponent,
 
   ],
   imports: [
