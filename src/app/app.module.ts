@@ -12,7 +12,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { SellerAuthComponent } from './seller-auth/seller-auth.component';
 import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { ProductComponent } from './product/product.component';
-import { BannerComponent } from './banner/banner.component';
 import { SignupSellerComponent } from './seller-auth/signup-seller/signup-seller.component';
 import { LoginComponent } from './login/login.component';
 
@@ -33,12 +32,9 @@ import { CartComponent } from './cart/cart.component';
     SellerAuthComponent,
     SellerHomeComponent,
     ProductComponent,
-    BannerComponent,
     SignupSellerComponent,
     LoginComponent,
-
     RegisterComponent,
-
     ProductFiltersComponent,
     ProductListComponent,
     ProductItemComponent,
