@@ -10,6 +10,7 @@ import { LoginComponent } from "./login/login.component";
 import { RegisterComponent } from "./register/register.component";
 
 import { ProductComponent } from "./product/product.component";
+import { CartComponent } from "./cart/cart.component";
 
 
 
@@ -46,8 +47,12 @@ const appRoutes:Routes = [
         path: 'product',
         component: ProductComponent
 
-    }
+    },
 
+    {
+        path: 'cart',
+        component: CartComponent
+    }
 ]
    
 @NgModule({
