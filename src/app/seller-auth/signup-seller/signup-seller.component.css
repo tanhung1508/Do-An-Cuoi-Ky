@@ -1,11 +1,10 @@
 .card{
     border: none;
     width: 500px;
-    
-    left: 50%;
+    top: 5%;
+    left: 70%;
     padding: 10px;
     background: #274d5a;
-    margin-top: 20px;
 }
 
 .card h1{
