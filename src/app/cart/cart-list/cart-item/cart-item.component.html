@@ -1,0 +1,13 @@
+<div class="row border-top border-bottom">
+    <div class="row main align-items-center">
+        <div class="col-2"><img class="img-fluid" src="{{ product['image'] }}"></div>
+        <div class="col">
+            <div class="row text-muted">Xe đạp</div>
+            <div class="row">{{ product['name'] }}</div>
+        </div>
+        <div class="col">
+            <a>-</a><a class="border">{{ product['quantity'] }}</a><a>+</a>
+        </div>
+        <div class="col">{{ product['price']}} VNĐ <span class="close">&#10005;</span></div>
+    </div>
+</div>

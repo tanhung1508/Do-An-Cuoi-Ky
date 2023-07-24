@@ -1,0 +1,12 @@
+<div class="title">
+    <div class="row">
+        <div class="col"><h4><b>Shopping Cart</b></h4></div>
+        <div class="col align-self-center text-right text-muted">3 items</div>
+    </div>
+</div>   
+<app-cart-item 
+    *ngFor="let item of productList"
+    [product]="item">
+
+</app-cart-item>
+<div class="back-to-shop"><a href="#">&leftarrow;</a><span class="text-muted">Back to shop</span></div>
