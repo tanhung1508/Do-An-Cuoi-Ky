@@ -1,34 +1,39 @@
-<div class="cart">
-    <h1>Giỏ hàng</h1>
+
+<div class="cart-page">
+    <h1>
+        Cart Page
+    </h1>
     <div class="row">
-        <div class="col-sm-8 details">
-            <ul>
-                <li>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Left_side_of_Flying_Pigeon.jpg">
-                </li>
-                <li>
-                    <span>Tên sản phẩm : Xe đạp</span>
-                </li>
-                <li>
-                    <span>Giá : 10.000.000</span>
-                </li>  
-                <li>
-                    <span>Số lượng</span>
-                </li>
-                <li>
-                    <button class="form-button">Xóa khỏi giỏ hàng</button>
-                </li>
-            </ul>
-        </div> 
-        <div class="col-sm-4 summary">
-            <h3>Đơn hàng</h3>
-            <ul>
-                <li><span>Tiền hàng:</span><span>300</span></li>
-                <li><span>Thuế:</span><span>300</span></li>
-                <li><span>Tiền giao hàng:</span><span>300</span></li>
-                <li><span>Giảm giá:</span><span>300</span></li>
-                <li><span><h4>Tổng cộng:</h4></span><span>300</span></li>
-            </ul>
-        </div>
+    <div class="col-sm-8 details">
+        <ul *ngFor="let cart of cartData">
+            <li>
+                <img src="{{cart.image}}" alt="">
+            </li>
+            <li>
+                <span> {{cart.name}}</span>
+            </li>
+            <li>
+                <span> Price : {{cart.price}}</span>
+            </li>
+            <li>
+                <span> Quantity : {{cart.quantity}}</span>
+            </li>
+            <li >
+               <button class="form-button"(click)="removeToCart(cart.id)" >Remove To Cart</button>
+            </li>
+        </ul>
+        
     </div>
-</div>
+    <div class="col-sm-4 summary">
+    <h3>Summary</h3>
+    <ul>
+        <li> <span>Amount:</span><span>{{priceSummary.price}}</span></li>
+        <li> <span>Tax:</span><span>{{priceSummary.tax}}</span></li>
+        <li> <span>Delivery:</span><span>{{priceSummary.delivery}}</span></li>
+        <li> <span>Discount:</span><span>{{priceSummary.discount}}</span></li>
+        <li> <span><h4>Total</h4></span> <span><h4>{{priceSummary.total}}</h4></span></li>
+        <button (click)="checkout()" class="form-button max-width" >Checkout</button>
+    </ul>
+    </div>
+    </div>
+    </div>

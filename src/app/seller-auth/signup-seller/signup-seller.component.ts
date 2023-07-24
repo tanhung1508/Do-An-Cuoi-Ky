@@ -10,6 +10,7 @@ import { SellerService } from 'src/app/services/seller.service';
 })
 export class SignupSellerComponent {
 
+  
   constructor(private seller : SellerService, private router: Router) {}
 
   ngOnInit(): void{
@@ -18,8 +19,5 @@ export class SignupSellerComponent {
   signUp(data: signUp): void {
     console.warn(data);
     this.seller.userSignUp(data);
-  }
-  onSellerFetch(){
-    this.seller.fetchSeller();
   }
 }

@@ -11,6 +11,9 @@ import { RegisterComponent } from "./register/register.component";
 
 import { ProductComponent } from "./product/product.component";
 import { CartComponent } from "./cart/cart.component";
+import { SellerAddProductComponent } from "./seller-add-product/seller-add-product.component";
+import { SellerUpdateProductComponent } from "./seller-update-product/seller-update-product.component";
+import { SearchComponent } from "./search/search.component";
 
 
 
@@ -52,7 +55,20 @@ const appRoutes:Routes = [
     {
         path: 'cart',
         component: CartComponent
-    }
+    },
+    {
+        component:SellerAddProductComponent,
+        path:'seller-add-product',
+        canActivate:[AuthGuard]
+      },{
+        component:SellerUpdateProductComponent,
+        path:'seller-update-product/:id',
+        canActivate:[AuthGuard]
+      },
+      {
+        component: SearchComponent,
+        path:'search/:query'
+      }
 ]
    
 @NgModule({

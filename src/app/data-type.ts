@@ -1,9 +1,8 @@
 export interface signUp{
-    id?: string,
-    name: string,
-    password: string,
-    email: string,
-    phone: string
+  name: string;
+  phone:string;
+  email: string;
+  password: string;
 }
 
 export interface login {

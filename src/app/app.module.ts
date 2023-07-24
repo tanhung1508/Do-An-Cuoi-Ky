@@ -16,11 +16,15 @@ import { SignupSellerComponent } from './seller-auth/signup-seller/signup-seller
 import { LoginComponent } from './login/login.component';
 
 import { RegisterComponent } from './register/register.component';
-
 import { ProductFiltersComponent } from './product/product-filters/product-filters.component';
 import { ProductListComponent } from './product/product-list/product-list.component';
 import { ProductItemComponent } from './product/product-list/product-item/product-item.component';
 import { CartComponent } from './cart/cart.component';
+import { CategoryComponent } from './category/category.component';
+import { SellerUpdateProductComponent } from './seller-update-product/seller-update-product.component';
+import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
+import { SearchComponent } from './search/search.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 @NgModule({
@@ -39,6 +43,11 @@ import { CartComponent } from './cart/cart.component';
     ProductListComponent,
     ProductItemComponent,
     CartComponent,
+    CategoryComponent,
+    SellerUpdateProductComponent,
+    SellerAddProductComponent,
+    SearchComponent,
+    CheckoutComponent,
 
   ],
   imports: [
