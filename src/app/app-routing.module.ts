@@ -6,6 +6,16 @@ import { SellerHomeComponent } from "./seller-home/seller-home.component";
 import { AuthGuard } from "./auth.guard";
 import { SignupSellerComponent } from "./seller-auth/signup-seller/signup-seller.component";
 
+import { LoginComponent } from "./login/login.component";
+import { RegisterComponent } from "./register/register.component";
+
+import { ProductComponent } from "./product/product.component";
+import { CartComponent } from "./cart/cart.component";
+import { SellerAddProductComponent } from "./seller-add-product/seller-add-product.component";
+import { SellerUpdateProductComponent } from "./seller-update-product/seller-update-product.component";
+import { SearchComponent } from "./search/search.component";
+
+
 
 const appRoutes:Routes = [
     {
@@ -24,7 +34,41 @@ const appRoutes:Routes = [
     {
         path: 'signup-seller',
         component: SignupSellerComponent
-    }
+    },
+
+
+    {
+        path: 'login',
+        component: LoginComponent
+    },
+
+    {
+        path: 'register',
+        component : RegisterComponent},
+
+    {
+        path: 'product',
+        component: ProductComponent
+
+    },
+
+    {
+        path: 'cart',
+        component: CartComponent
+    },
+    {
+        component:SellerAddProductComponent,
+        path:'seller-add-product',
+        canActivate:[AuthGuard]
+      },{
+        component:SellerUpdateProductComponent,
+        path:'seller-update-product/:id',
+        canActivate:[AuthGuard]
+      },
+      {
+        component: SearchComponent,
+        path:'search/:query'
+      }
 ]
    
 @NgModule({

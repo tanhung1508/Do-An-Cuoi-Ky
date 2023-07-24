@@ -1,0 +1,71 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "name": "Hưng",
+      "phone": "0123456789",
+      "email": "hung1406@gmail.com",
+      "password": "hung15080303",
+      "id": 2
+    },
+    {
+      "name": "Hưng",
+      "phone": "0123456789",
+      "email": "hung1406@gmail.com",
+      "password": "hung15080303",
+      "id": 3
+    }
+  ],
+  "profile": {
+    "name": "Hưng",
+    "phone": "0123456789",
+    "email": "hung1406@gmail.com",
+    "password": "hung15080303"
+  },
+  "seller": [
+    {
+      "name": "Hưng",
+      "phone": "0123456789",
+      "email": "hung1406@gmail.com",
+      "password": "hung15080303",
+      "id": 1
+    },
+    {
+      "name": "Hưng",
+      "phone": "0123456789",
+      "email": "hung1406@gmail.com",
+      "password": "hung15080303",
+      "id": 2
+    },
+    {
+      "name": "Nguyễn Tấn Hưng",
+      "phone": "4326564",
+      "email": "hung123@gmail.com",
+      "password": "hung123",
+      "id": 3
+    }
+  ],
+  "user": [],
+  "product": [
+    {
+      "name": "Nguyễn Tấn Hưng",
+      "price": "100000",
+      "category": "xe",
+      "color": "xanh",
+      "description": "pleple",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/Left_side_of_Flying_Pigeon.jpg",
+      "id": 1
+    }
+  ]
+}
