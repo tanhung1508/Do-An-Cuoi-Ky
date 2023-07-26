@@ -85,7 +85,7 @@ header {
     bottom : -6px;
     width: 100%;
     height: 3px;
-    background: red;
+    background: #355764;
     border-radius: 5px;
     transform-origin: right;
     transform:  scaleX();

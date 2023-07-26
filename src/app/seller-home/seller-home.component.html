@@ -1,4 +1,4 @@
-<div class="product-list">
+<div class="product-list" style = "margin: 10px;">
     <h1>Product List</h1>
     <p class="message-p">{{ productMessage }}</p>
     <table>
@@ -22,8 +22,10 @@
                 <td>{{ item.category }}</td>
                 <td>{{ item.description }}</td>
                 <td>
-                    <button class="btn-danger" (click)="deleteProduct(item.id)">Xóa</button>
-                    <a class="adjust-update-link btn-success" routerLink="/seller-update-product/{{item.id}}">Cập nhật</a>
+                    <div style = " text-align: center;display: flex;">
+                        <button class="btn-danger" (click)="deleteProduct(item.id)">Delete</button>
+                    <a class="adjust-update-link btn-success" routerLink="/seller-update-product/{{item.id}}">Edit</a>
+                    </div>
                 </td>
             </tr>
         </tbody>
