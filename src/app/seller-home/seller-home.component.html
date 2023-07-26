@@ -4,8 +4,8 @@
     <table>
         <thead>
             <tr>
-                <th>Image</th>
-                <th>Name</th>
+                <th>Hình</th>
+                <th>Tên sản phẩm</th>
                 <th>Price</th>
                 <th>Color</th>
                 <th>Category</th>
@@ -23,7 +23,7 @@
                 <td>{{ item.description }}</td>
                 <td>
                     <button class="btn-danger" (click)="deleteProduct(item.id)">Xóa</button>
-                    <a class="adjust-update-link btn-success" routerLink="/seller-update-product/{{item.id}}">Chỉnh sửa</a>
+                    <a class="adjust-update-link btn-success" routerLink="/seller-update-product/{{item.id}}">Cập nhật</a>
                 </td>
             </tr>
         </tbody>

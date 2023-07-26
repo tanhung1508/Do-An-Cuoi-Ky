@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { cart, price } from '../data-type';
 import { ProductService } from '../services/product.service';
 import { Router } from '@angular/router';
@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']
 })
-export class CartComponent {
+export class CartComponent implements OnInit{
   cartData: cart[] | undefined;
   priceSummary: price = {
     price: 0,
@@ -44,7 +44,7 @@ export class CartComponent {
       this.priceSummary.price = price;
       this.priceSummary.discount = price / 10;
       this.priceSummary.tax = price / 10;
-      this.priceSummary.delivery = 100;
+      this.priceSummary.delivery = 30000;
       this.priceSummary.total = price + (price / 10) + 100 - (price / 10);
 
       if (!this.cartData.length) {
@@ -53,8 +53,6 @@ export class CartComponent {
 
     })
   }
-
-
 
 
   checkout() {

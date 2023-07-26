@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { cart, product } from 'src/app/data-type';
 import { ProductService } from 'src/app/services/product.service';
@@ -8,7 +8,7 @@ import { ProductService } from 'src/app/services/product.service';
   templateUrl: './product-item.component.html',
   styleUrls: ['./product-item.component.css']
 })
-export class ProductItemComponent {
+export class ProductItemComponent implements OnInit{
   productData:undefined | product;
   productQuantity:number=1;
   removeCart=false;
@@ -44,14 +44,11 @@ export class ProductItemComponent {
        }
         })
       }
-      
-      
-      
     })
     
   }
   handleQuantity(val:string){
-    if(this.productQuantity<20 && val==='plus'){
+    if(this.productQuantity<10 && val==='plus'){
       this.productQuantity+=1;
     }else if(this.productQuantity>1 && val==='min'){
       this.productQuantity-=1;

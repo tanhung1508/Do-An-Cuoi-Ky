@@ -54,6 +54,13 @@
       "email": "hung123@gmail.com",
       "password": "hung123",
       "id": 3
+    },
+    {
+      "name": "Hưng Nguyễn",
+      "phone": "0832732652",
+      "email": "hung1508@gmail.com",
+      "password": "hung123",
+      "id": 4
     }
   ],
   "user": [],
@@ -67,5 +74,48 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/Left_side_of_Flying_Pigeon.jpg",
       "id": 1
     }
-  ]
+  ],
+  "users": [
+    {
+      "name": "Nguyễn Tấn Hưng",
+      "phone": "4326564",
+      "email": "hung123@gmail.com",
+      "password": "hung123",
+      "id": 1
+    },
+    {
+      "name": "hung",
+      "phone": "0832732652",
+      "email": "hung123@gmail.com",
+      "password": "hung01",
+      "id": 2
+    }
+  ],
+  "cart": [
+    {
+      "name": "Nguyễn Tấn Hưng",
+      "price": "100000",
+      "category": "xe",
+      "color": "xanh",
+      "description": "pleple",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/Left_side_of_Flying_Pigeon.jpg",
+      "quantity": 1,
+      "productId": 1,
+      "userId": 2,
+      "id": 1
+    },
+    {
+      "name": "Nguyễn Tấn Hưng",
+      "price": "100000",
+      "category": "xe",
+      "color": "xanh",
+      "description": "pleple",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/Left_side_of_Flying_Pigeon.jpg",
+      "quantity": 1,
+      "productId": 1,
+      "userId": 1,
+      "id": 2
+    }
+  ],
+  "orders": []
 }

@@ -26,7 +26,7 @@
       <a routerLink="my-orders">My Orders</a>
       <a (click)="userLogout()">Logout</a>
 
-      <a [routerLink]="cartItems>0?'cart-page':null">Cart({{cartItems}})</a>
+      <a [routerLink]="cartItems>0?'cart-page':null"><i class='bx bx-cart' style="font-size: 30px;"></i>({{cartItems}})</a>
     </nav>
     <nav *ngSwitchCase="'seller'" class="navigation">
       <a routerLink="seller-add-product">Add Product</a>
