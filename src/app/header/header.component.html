@@ -26,7 +26,7 @@
     <nav *ngSwitchCase="'default'" class="navigation" >
       
       <a routerLink="">Home</a>
-      <a routerLink="seller-auth">Seller</a>
+      <a routerLink="seller-auth">Admin</a>
       <a routerLink="login">Login</a>
       <a href="#"><i class='bx bx-cart' style="font-size: 30px;"></i>({{cartItems}})</a>
     </nav>
@@ -41,7 +41,7 @@
     </nav> -->
 
     <nav *ngSwitchCase="'user'" class="navigation" style="display: flex;">
-      <a routerLink="seller-auth">Seller</a>
+      <a routerLink="seller-auth">Admin</a>
       <a routerLink="">Home</a>
       <div class="user-dropdown">
         <a>{{userName | titlecase}}</a>
