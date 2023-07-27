@@ -1,25 +1,36 @@
+<style>
+  .navigation {
+    display: flex !important;
+  }
+</style>
+ 
 <header>
-  <a href="index.html" class="logo"><img src="assets/images/logo.png"></a>
+  <a href="index.html" class="logo">
+    <img src="assets/images/logo.png"></a>
+  
   <div *ngIf="menuType!=='seller'" class="nav-search">
     <input type="text" #searchInput (keyup)="searchProduct($event)" (blur)="hideSearch()"
-      placeholder="Search Products" type="text" style="width: 500px;border: none; border-bottom: 2px solid red;"
+      placeholder="Search Products" type="text" style="width: 500px;border: none; border-bottom: 2px solid #355764;"
       class = "input-search"/>
+      
     <button (click)="submitSearch(searchInput.value)" class="serch"><i class='bx bx-search' style="width: 40px; font-size: 24px;"></i></button>
     <ul class="suggested-search" *ngIf="searchResult">
+
       <li *ngFor="let item of searchResult">
         <a (mousedown)="redirectToDetails(item.id)">{{item.name}}</a>
       </li>
     </ul>
   </div>
-  <span class="input-group-text"><i class="bi bi-search"></i></span>
-  <div [ngSwitch]="menuType">
-    <nav *ngSwitchCase="'default'" class="navigation">
-      <a routerLink="seller-auth">Seller</a>
+  <!-- <span class="input-group-text"><i class="bi bi-search"></i></span> -->
+  <div [ngSwitch]="menuType"   style="display: flex;">
+    <nav *ngSwitchCase="'default'" class="navigation" >
+      
       <a routerLink="">Home</a>
+      <a routerLink="seller-auth">Admin</a>
       <a routerLink="login">Login</a>
       <a href="#"><i class='bx bx-cart' style="font-size: 30px;"></i>({{cartItems}})</a>
     </nav>
-    <nav *ngSwitchCase="'user'" class="navigation">
+    <!-- <nav *ngSwitchCase="'user'" class="navigation">
       <a routerLink="seller-auth">Seller</a>
       <a routerLink="">Home</a>
       <a>{{userName | titlecase}}</a>
@@ -27,12 +38,31 @@
       <a (click)="userLogout()">Logout</a>
 
       <a [routerLink]="cartItems>0?'cart-page':null"><i class='bx bx-cart' style="font-size: 30px;"></i>({{cartItems}})</a>
+    </nav> -->
+
+    <nav *ngSwitchCase="'user'" class="navigation" style="display: flex;">
+      <a routerLink="seller-auth">Admin</a>
+      <a routerLink="">Home</a>
+      <div class="user-dropdown">
+        <a>{{userName | titlecase}}</a>
+        
+
+        <div class="dropdown-content">
+          <a routerLink="my-orders">My Orders</a>
+          <a (click)="userLogout()">Logout</a>
+        </div>
+      </div>
+      <a [routerLink]="cartItems>0?'cart-page':null"><i class='bx bx-cart' style="font-size: 30px;"></i>({{cartItems}})</a>
     </nav>
+
+
     <nav *ngSwitchCase="'seller'" class="navigation">
-      <a routerLink="seller-add-product">Add Product</a>
       <a routerLink="seller-home">List</a>
-      <a (click)="logout()">Logout</a>
+      <a routerLink="seller-add-product">Add Product</a>
+     
+      
       <a href="#">{{sellerName | titlecase}}</a>
+      <a (click)="logout()">Logout</a>
     </nav>
   </div>
 </header>

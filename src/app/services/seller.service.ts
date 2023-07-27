@@ -28,7 +28,7 @@ export class SellerService {
   reloadSeller() {
     if (localStorage.getItem('seller')) {
       this.isSellerLoggedIn.next(true)
-      this.router.navigate(['seller-auth'])
+      this.router.navigate(['seller-home'])
     }
   }
   userLogin(data: login) {
