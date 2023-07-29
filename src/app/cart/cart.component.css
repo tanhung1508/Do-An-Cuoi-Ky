@@ -1,3 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+.summary button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+.summary * {
+    border-radius: 10px;
+}
+.vien{
+    border-radius: 10px;
+}
+.cart-page{
+    display: flex;
+    margin-bottom: 25px;
+}
+.form-button{
+    border-radius: 10px;
+    width: 8em;
+
+}
+.my_li{
+    align-items: center;
+    justify-self: center;
+    display: flex;
+}
+.form-button:hover{
+    color:red;
+}
+
+
+
 .cart{
     margin: top 40px;
     margin-bottom: 50px;

@@ -38,17 +38,18 @@ export class CartComponent implements OnInit{
       let price = 0;
       result.forEach((item) => {
         if (item.quantity) {
-          price = price + (+item.price * +item.quantity)
+          price = price + (+item.price * +item.quantity);
         }
       })
       this.priceSummary.price = price;
       this.priceSummary.discount = price / 10;
-      this.priceSummary.tax = price / 10;
+      this.priceSummary.tax = price / 8;
       this.priceSummary.delivery = 30000;
-      this.priceSummary.total = price + (price / 10) + 100 - (price / 10);
+      // this.priceSummary.total = price +  (price / 8000) + 30000 -(price / 10000);
+      this.priceSummary.total = price + this.priceSummary.tax + this.priceSummary.delivery - this.priceSummary.discount;
 
       if (!this.cartData.length) {
-        this.router.navigate(['/'])
+        this.router.navigate(['/']);
       }
 
     })
