@@ -17,7 +17,7 @@ export class SellerAddProductComponent implements OnInit {
     this.product.addProduct(data).subscribe((result) => {
       console.warn(result);
       if (result) {
-        this.addProductMessage = 'Product is added successfully';
+        this.addProductMessage = 'Thêm thành công';
       }
     });
 

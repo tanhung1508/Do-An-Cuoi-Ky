@@ -60,21 +60,31 @@ export class HeaderComponent implements OnInit {
       const element = query.target as HTMLInputElement;
       this.product.searchProduct(element.value).subscribe((result)=>{
        
-        if(result.length>5){
-          result.length=length
+        // if(result.length>5){
+        //   result.length=length
+        // }
+        // this.searchResult=result;
+        if (result.length > 5) {
+          this.searchResult = result.slice(0, 5);
+        } else {
+          this.searchResult = result;
         }
-        this.searchResult=result;
       })
     }
   }
+  
   hideSearch(){
     this.searchResult=undefined
   }
-  redirectToDetails(id:number){
-    this.route.navigate(['/details/'+id])
+  
+  redirectToDetails(id: number) {
+    this.route.navigate(['/details/' + id]);
+    this.searchResult=undefined; // Ẩn danh sách kết quả tìm kiếm khi chuyển tới trang chi tiết
   }
   submitSearch(val:string){
     console.warn(val)
   this.route.navigate([`search/${val}`]);
   }
+
+  
 }

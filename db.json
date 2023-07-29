@@ -67,7 +67,7 @@
   "product": [
     {
       "name": "Giant Giant XTC 329",
-      "price": "1649",
+      "price": "1000000",
       "category": "Leo núi",
       "color": "Blue",
       "description": "Xe đạp Giant XTC Advanced 3 29″ 2022 - Shimano Deore có khung size S. Xe phù hợp với chiều cao từ 158-173 cm.",
@@ -136,6 +136,15 @@
       "description": "Màu 2023 POISON SL - SRAM GX Eagle có khung size M. Xe phù hợp với chiều cao từ 163-178 cm.",
       "image": "https://d1mgeijqpfaspl.cloudfront.net/uploads/bike/image_side/thumbs/1272/7b8a4574-2e4a-4909-8357-3f25270f658d.JPG",
       "id": 8
+    },
+    {
+      "name": "",
+      "price": "",
+      "category": "",
+      "color": "",
+      "description": "",
+      "image": "",
+      "id": 9
     }
   ],
   "users": [
@@ -166,6 +175,20 @@
       "email": "tinh123@gmail.com",
       "password": "123",
       "id": 4
+    },
+    {
+      "name": "xin chao moi nguoi minh la tinh ne",
+      "phone": "00000000",
+      "email": "8",
+      "password": "8",
+      "id": 5
+    },
+    {
+      "name": "Trinh Tran Phuong Tuan",
+      "phone": "1",
+      "email": "1",
+      "password": "1",
+      "id": 6
     }
   ],
   "cart": [
@@ -194,26 +217,42 @@
       "id": 5
     },
     {
-      "name": "NS ns bikes RAG 2",
-      "price": "$1859",
+      "name": "Giant Giant XTC 329",
+      "price": "1000000",
       "category": "Leo núi",
-      "color": "Yellow",
-      "description": "Xe đạp NS ns 2022 RAG 2 - SRAM Apex có kích thước khung M. Xe phù hợp với chiều cao từ 163-178 cm.",
-      "image": "https://d1mgeijqpfaspl.cloudfront.net/uploads/bike/image_side/thumbs/1272/64c0dc0f8bb4b_vvyurgds4u.webp",
+      "color": "Blue",
+      "description": "Xe đạp Giant XTC Advanced 3 29″ 2022 - Shimano Deore có khung size S. Xe phù hợp với chiều cao từ 158-173 cm.",
+      "image": "https://d1mgeijqpfaspl.cloudfront.net/uploads/bike/image_side/thumbs/1272/64c0da6a7f588_k9ijjfspak.webp",
       "quantity": 1,
-      "productId": 3,
-      "userId": 3,
+      "productId": 1,
+      "userId": 1,
       "id": 6
     }
   ],
   "orders": [
     {
-      "email": "hung123@gmail.com",
-      "address": "Tinh",
-      "contact": "1232313",
-      "totalPrice": 1749,
-      "userId": 1,
+      "email": "sdfg",
+      "address": "sdfsd",
+      "contact": "fsdf",
+      "totalPrice": 3188,
+      "userId": 3,
       "id": 1
+    },
+    {
+      "email": "sdf",
+      "address": "dsf",
+      "contact": "sdf",
+      "totalPrice": 1959,
+      "userId": 3,
+      "id": 2
+    },
+    {
+      "email": "sdf",
+      "address": "dsf",
+      "contact": "dsf",
+      "totalPrice": 15017,
+      "userId": 1,
+      "id": 3
     }
   ]
 }
