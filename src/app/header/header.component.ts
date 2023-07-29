@@ -72,6 +72,8 @@ export class HeaderComponent implements OnInit {
       })
     }
   }
+
+  
   
   hideSearch(){
     this.searchResult=undefined

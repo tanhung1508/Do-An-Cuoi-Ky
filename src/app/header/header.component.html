@@ -2,6 +2,7 @@
   .navigation {
     display: flex !important;
   }
+
   .suggested-search {
     position: absolute;
     top: 100%;
@@ -15,7 +16,6 @@
     margin: 0;
     z-index: 1;
   }
-
   
   .input-search {
     position: relative;
@@ -23,6 +23,11 @@
   
   .nav-search {
     position: relative;
+  }
+  
+  .suggested-search ~ .nav-search {
+    position: relative;
+    bottom: 100%;
   }
 </style>
  
