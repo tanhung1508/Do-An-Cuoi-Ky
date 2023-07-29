@@ -1,37 +1,38 @@
 <div class="checkout">
-    <h1>Checkout</h1>
+    <h2>Phương thức thanh toán</h2>
+    
     <div class="row">
-      <div class="col-sm-7">
-        <h3>Add shipping address</h3>
+      <div class="col-sm-7" style="border-right: 1px solid black;width: 50%;margin-top: 50px;">
+        <h3>Thêm địa chỉ giao hàng</h3>
         <p class="message-p">{{orderMsg}}</p>
         <form #orderData="ngForm" class="common-form" (ngSubmit)="orderNow(orderData.value)">
           <input
             type="text"
             class="form-input"
             name="email"
-            placeholder="Enter User Email"
+            placeholder="Nhập vào email"
             ngModel
           />
           <input
             type="text"
             class="form-input"
             name="address"
-            placeholder="Enter User Address"
+            placeholder="Địa chỉ giao hàng"
             ngModel
           />
           <input
-            type="text"
+            type="number"
             class="form-input"
             name="contact"
-            placeholder="Enter contact details"
+            placeholder="Nhập số điện thoại liên lạc"
             ngModel
           />
-          <button class="form-button">Order Now</button>
+          <button class="form-button">Đặt hàng ngay</button>
         </form>
       </div>
-      <div class="col-sm-5">
-          <h3>Total Amount: {{totalPrice}}</h3>
-          <h4>Payment Method : <b>Pay on delivery</b></h4>
+      <div class="col-sm-5" style = "width: 50%;margin-top: 80px;">
+          <h3>Tổng cộng: {{totalPrice | number:'1.0-0'}} VNĐ</h3>
+          <h4>Phương thức thanh toán : <b>Thanh toán khi nhận hàng</b></h4>
       </div>
     </div>
   </div>

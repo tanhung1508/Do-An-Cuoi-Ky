@@ -67,7 +67,7 @@
   "product": [
     {
       "name": "Giant Giant XTC 329",
-      "price": "1000000",
+      "price": "3290000",
       "category": "Leo núi",
       "color": "Blue",
       "description": "Xe đạp Giant XTC Advanced 3 29″ 2022 - Shimano Deore có khung size S. Xe phù hợp với chiều cao từ 158-173 cm.",
@@ -217,20 +217,20 @@
       "id": 5
     },
     {
-      "name": "Coluer POISON SL",
-      "price": "2000000",
+      "name": "Rabeneick TS10 Pinion",
+      "price": "1229",
       "category": "Leo núi",
-      "color": "White",
-      "description": "Màu 2023 POISON SL - SRAM0 GX Eagle có khung size M. Xe phù hợp với chiều cao từ 163-178 cm.",
-      "image": "https://d1mgeijqpfaspl.cloudfront.net/uploads/bike/image_side/thumbs/628/64c3777062d32_iq5e8xwbor.webp",
+      "color": "Black",
+      "description": "Rabeneick Rabeneick TS10 Pinion 2020 - Khác có kích thước khung là 60. Xe phù hợp với chiều cao từ 183-193 cm.",
+      "image": "https://d1mgeijqpfaspl.cloudfront.net/uploads/bike/image_side/thumbs/628/64c0dc9292a1c_waer1txq43.webp",
       "quantity": 1,
-      "productId": 10,
+      "productId": 2,
       "userId": 1,
-      "id": 7
+      "id": 6
     },
     {
       "name": "Giant Giant XTC 329",
-      "price": "1000000",
+      "price": "3290000",
       "category": "Leo núi",
       "color": "Blue",
       "description": "Xe đạp Giant XTC Advanced 3 29″ 2022 - Shimano Deore có khung size S. Xe phù hợp với chiều cao từ 158-173 cm.",
@@ -238,7 +238,7 @@
       "quantity": 1,
       "productId": 1,
       "userId": 1,
-      "id": 8
+      "id": 7
     }
   ],
   "orders": [

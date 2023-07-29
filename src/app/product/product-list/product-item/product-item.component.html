@@ -7,19 +7,19 @@
     <div class="col-sm-6">
         <div class="details">
             <h1>{{productData.name}}</h1>
-            <h3>Price : {{productData.price}}</h3>
+            <h3>Giá tiền : {{productData.price | number:'1.0-0'}} VNĐ</h3>
             <div style = "display: flex;">
                 <h5 style = " text-align: center;display: flex;justify-content: center;align-items: center;margin-right: 20px;">Color: </h5>
                 <h3 [style.backgroundColor]="productData.color" class="product-color"></h3></div>
-            <h6>Category : {{productData.category}}</h6>
-            <h6>Description : {{productData.description}}</h6>
+            <h6>Loại : {{productData.category}}</h6>
+            <h6>Mô tả sản phẩm : {{productData.description}}</h6>
             
             <div class="quantity-group">
                 <button (click)="handleQuantity('min')" style = "background-color: #ffffff;" >-</button>
                 <input type="text" value="{{productQuantity}}" style = "height:45px;text-align: center;border:1px solid black;border-radius: 5px"/>
                 <button (click)="handleQuantity('plus')" style = "background-color: #ffffff;margin-right: 50px;" ton>+</button>
-                <button *ngIf="removeCart" class="form-button" (click)=" removeToCart(productData.id)" style = "height: 45px;border:1px solid black;border-radius: 5px;">Remove to Cart</button>
-                <button *ngIf="!removeCart" class="form-button" (click)="addToCart()" style = "height: 45px;border:1px solid black;border-radius: 5px;">Add to Cart</button>
+                <button *ngIf="removeCart" class="form-button" (click)=" removeToCart(productData.id)" style = "height: 45px;border:1px solid black;border-radius: 5px;">Xóa khỏi giỏ hàng</button>
+                <button *ngIf="!removeCart" class="form-button" (click)="addToCart()" style = "height: 45px;border:1px solid black;border-radius: 5px;">Thêm vào giỏ hàng</button>
             </div>
          </div>
     </div>

@@ -2,7 +2,7 @@
     <div class="wrapper">
         <div class="form-box login">
             <h2>
-                Login
+                Đăng nhập
             </h2>
             <form #userLogin="ngForm" class="common-form" (ngSubmit)="login(userLogin.value)">
                 <div class="input-box">
@@ -20,13 +20,13 @@
                     minlength="2"
                     maxlength="20"
                     #password="ngModel">
-                    <label>Password</label>
+                    <label>Mật khẩu</label>
                 </div>
 
-                <button type="submit" class="btn-register">Login</button>
+                <button type="submit" class="btn-register">Đăng nhập</button>
 
                 <div class="login-register">
-                    <p>Don't have an account? <a class="register-link" routerLink="/register">Register</a></p>
+                    <p>Bạn chưa có tài khoản? <a class="register-link" routerLink="/register">Đăng ký</a></p>
                 </div>
             </form>
         </div>
