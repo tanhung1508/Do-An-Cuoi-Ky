@@ -1,4 +1,4 @@
-<div class="product-list-wrapper" style="margin-top: 5%;">
+<div class="product-list-wrapper" style="margin: 8%;">
     <div class="row">
       <div class="col-sm-3" *ngFor="let item of trendyProducts">
         <div class="product-item" style = "border-radius: 5px;">
@@ -8,15 +8,11 @@
           <div class="product-price">
             <h6>Price:{{item.price}} VNĐ</h6>
           </div>
-          <div class="product-color">
-            <h6>Color:{{item.color}}</h6>
-          </div>
-        </div>
-        <div class="product-footer" style = "display: flex;justify-content: center;align-items: center;">
-            <button *ngIf="!removeCart" class="form-button" (click)="addToCart()" style ="width: 50%;border-radius: 5px;">Add to Cart</button>
+          <div style = "display: flex; ">
+            <h5 style = " text-align: center;display: flex;justify-content: center;align-items: center;margin-right: 20px;">Màu: </h5>
+            <h3 [style.backgroundColor]="item.color" class="product-color"></h3></div>
         </div>
         </div>
-      </div>
-    
+      </div>    
     </div>
     </div>

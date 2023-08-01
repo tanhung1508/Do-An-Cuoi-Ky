@@ -10,7 +10,8 @@ import { ProductService } from '../services/product.service';
 export class SellerHomeComponent implements OnInit {
   productList: undefined | product[];
   productMessage: undefined | string;
-  
+  searchText= '';
+
   constructor(private product: ProductService) {}
 
   ngOnInit(): void {

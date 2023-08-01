@@ -43,6 +43,12 @@ export class ProductService {
     );
   }
 
+  searchCategoryProduct(category:string){
+    return this.http.get<product[]>(
+      `http://localhost:3000/product?category=${category}`
+    )
+  }
+
   localAddToCart(data: product) {
     let cartData = [];
     let localCart = localStorage.getItem('localCart');

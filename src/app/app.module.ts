@@ -24,6 +24,7 @@ import { SellerAddProductComponent } from './seller-add-product/seller-add-produ
 import { SearchComponent } from './search/search.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { OrderComponent } from './order/order.component';
+import { FilterPipe } from './filter.pipe';
 
 
 @NgModule({
@@ -46,13 +47,14 @@ import { OrderComponent } from './order/order.component';
     SearchComponent,
     CheckoutComponent,
     OrderComponent,
+    FilterPipe,
 
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

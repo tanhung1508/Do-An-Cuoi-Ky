@@ -8,10 +8,10 @@ import { cart, login, product, signUp } from '../data-type';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit{
-  showLogin:boolean=true
-  authError:string="";
-  constructor(private user: UserService, private product:ProductService) {}
+export class LoginComponent implements OnInit {
+  showLogin: boolean = true
+  authError: string = "";
+  constructor(private user: UserService, private product: ProductService) { }
 
   ngOnInit(): void {
     this.user.userAuthReload();
@@ -22,46 +22,47 @@ export class LoginComponent implements OnInit{
   }
   login(data: login) {
     this.user.userLogin(data)
-    this.user.invalidUserAuth.subscribe((result)=>{
+    this.user.invalidUserAuth.subscribe((result) => {
       console.warn(result);
-      if(result){
-         this.authError="User not found"
-      }else{
+      if (result) {
+        this.authError = "User not found"
+        
+      } else {
         this.localCartToRemoteCart();
       }
-      
+
     })
   }
-  localCartToRemoteCart(){
+  localCartToRemoteCart() {
     let data = localStorage.getItem('localCart');
     let user = localStorage.getItem('user');
-    let userId= user && JSON.parse(user).id;
-    if(data){
-     let cartDataList:product[]= JSON.parse(data);
-   
-     cartDataList.forEach((product:product, index)=>{
-       let cartData:cart={
-         ...product,
-         productId:product.id,
-         userId
-       }
-       delete cartData.id;
-       setTimeout(() => {
-         this.product.addToCart(cartData).subscribe((result)=>{
-           if(result){
-             console.warn("data is stored in DB");
-           }
-         })
-       }, 500);
-       if(cartDataList.length===index+1){
-         localStorage.removeItem('localCart')
-       }
-     })
+    let userId = user && JSON.parse(user).id;
+    if (data) {
+      let cartDataList: product[] = JSON.parse(data);
+
+      cartDataList.forEach((product: product, index) => {
+        let cartData: cart = {
+          ...product,
+          productId: product.id,
+          userId
+        }
+        delete cartData.id;
+        setTimeout(() => {
+          this.product.addToCart(cartData).subscribe((result) => {
+            if (result) {
+              console.warn("data is stored in DB");
+            }
+          })
+        }, 500);
+        if (cartDataList.length === index + 1) {
+          localStorage.removeItem('localCart')
+        }
+      })
     }
- 
+
     setTimeout(() => {
-     this.product.getCartList(userId)
+      this.product.getCartList(userId)
     }, 2000);
-     
-   }
+
+  }
 }

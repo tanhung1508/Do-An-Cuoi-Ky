@@ -38,7 +38,7 @@
       </nav>
   <div *ngIf="menuType!=='seller'" class="nav-search" style="margin-right: auto;width: 40%;">
     <input type="text" #searchInput (keyup)="searchProduct($event)" (blur)="hideSearch()"
-      placeholder="Search Products" type="text" style="width: 100%;border: none; border-bottom: 2px solid #355764;"
+      placeholder="Tìm kiếm sản phẩm" type="text" style="width: 100%;border: none; border-bottom: 2px solid #355764;"
       class = "input-search"/>
       
     <button (click)="submitSearch(searchInput.value)" class="serch"><i class='bx bx-search' style="width: 40px; font-size: 24px;"></i></button>
