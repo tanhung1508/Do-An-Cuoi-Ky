@@ -7,26 +7,51 @@
 
             <form #userSignUp="ngForm" (ngSubmit)="signUp(userSignUp.value)">
                 <div class="input-box">
-                    <input type="text" name="name" required class="user-password" ngModel>
+                    <input type="text" name="name" required class="user-password" ngModel
+                    #name="ngModel">
                     <label>Tên khách hàng</label>
+                    <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert">
+                        <p *ngIf="phone.errors?.['required']" class="danger">Không được để trống</p>
+                    </div>
                 </div>
                 <div class="input-box">
                     <span class="icon">
 
                     </span>
-                    <input type="text" ngModel name="phone" required class="user-password">
+                    <input type="text" ngModel name="phone" class="user-password"
+                    required 
+                    pattern="^[0-9]{11}$"
+                    #phone="ngModel">
                     <label>Số điện thoại</label>
+                    <div *ngIf="phone.invalid && (phone.dirty || phone.touched)"class="alert">
+                        <p *ngIf="phone.errors?.['required']" class="danger">Không được để trống</p>
+                        <p *ngIf="phone.errors?.['pattern']" class="danger">SĐT không hợp lệ!</p>
+                    </div>
                 </div>
                 <div class="input-box">
                     <span class="icon">
 
                     </span>
-                    <input type="text" name="email" required class="user-password" ngModel>
+                    <input type="text" name="email" class="user-password" 
+                    ngModel
+                    required 
+                    pattern="^[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$" 
+                    #email="ngModel">
                     <label>Email</label>
+                    <div *ngIf="email.invalid && (email.dirty || email.touched)"class="alert">
+                        <p *ngIf="email.errors?.['required']" class="danger">Không được để trống</p>
+                        <p *ngIf="email.errors?.['pattern']" class="danger">Email không hợp lệ!</p>
+                    </div>
                 </div>
                 <div class="input-box">
-                    <input type="password" class="user-password" required name="password" ngModel>
+                    <input type="password" class="user-password" required name="password" ngModel
+                    pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])$"
+                    #password="ngModel">
                     <label>Mật khẩu</label>
+                    <div *ngIf="password.invalid && (password.dirty || password.touched)" class="alert">
+                        <p *ngIf="password.errors?.['required']" class="danger">Không được để trống</p>
+                        <p *ngIf="password.errors?.['pattern']" class="danger">Mật khẩu không hợp lệ</p>
+                    </div>
                 </div>
                 <div class="login">
                     <button type="submit" class="btn-register">Register</button>
