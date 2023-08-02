@@ -1,1 +1,36 @@
-<p>seller-home works!</p>
+<div class="product-list" style="margin: 5%;margin-top: 20px;">
+    <h1>Danh sách sản phẩm</h1>
+    <input [(ngModel)]="searchText" placeholder="Tìm kiếm sản phẩm"
+        style="width: 300px;border: none; border-bottom: 2px solid #355764;" class="input-search">
+    <p class="message-p">{{ productMessage }}</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Hình</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá tiền</th>
+                <th>Màu</th>
+                <th>Loại</th>
+                <th>Mô tả</th>
+                <th>Chức năng</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of productList | search :searchText">
+                <td><img src="{{ item.image }}" /></td>
+                <td src="#">{{ item.name }}</td>
+                <td>{{ item.price }} đ</td>
+                <td>{{ item.color }}</td>
+                <td>{{ item.category }}</td>
+                <td>{{ item.description }}</td>
+                <td>
+                    <div style=" text-align: center;display: flex;">
+                        <button class="btn-danger" (click)="deleteProduct(item.id)">Xóa</button>
+                        <a class="adjust-update-link btn-success"
+                            routerLink="/seller-update-product/{{item.id}}">Sửa</a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

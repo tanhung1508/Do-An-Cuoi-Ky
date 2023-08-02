@@ -1,0 +1,32 @@
+<style>
+    .form-input {
+        border: 1px solid black;
+        border-radius: 5px
+    }
+</style>
+
+<div class="add-product" style="margin: 4%;">
+    <h1>Thêm sản phẩm mới</h1>
+    <p class="message-p">{{addProductMessage}}</p>
+    <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)" class="common-form">
+        <input type="text" class="form-input" placeholder="Nhập tên sản phẩm" ngModel name="name" />
+        <input type="text" class="form-input" placeholder="Nhập giá tiền sản phẩm" ngModel name="price" />
+        <select class="form-input" id="myDropdown" onchange="updateDropdownName(this)" ngModel name="category"
+            placeholder="Chọn loại sản phẩm">
+            <option value="Xe leo núi">Xe leo núi</option>
+            <option value="Xe trẻ em">Xe trẻ em</option>
+            <option value="Xe thể thao">Xe thể thao</option>
+        </select>
+        <select class="form-input" id="myDropdown" onchange="updateDropdownName(this)" ngModel name="color"
+            placeholder="Chọn màu sản phẩm">
+            <option value="Blue">Blue</option>
+            <option value="Black">Black</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Green">Green</option>
+            <option value="White">White</option>
+        </select>
+        <input type="text" class="form-input" placeholder="Nhập vào mô tả sản phẩm" ngModel name="description" />
+        <input type="text" class="form-input" placeholder="Nhập vào URL hình ảnh" ngModel name="image" />
+        <button class="form-button">Thêm sản phẩm</button>
+    </form>
+</div>

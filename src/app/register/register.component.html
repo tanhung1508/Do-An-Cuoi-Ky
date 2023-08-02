@@ -1,33 +1,40 @@
 <div class="center">
-    <div class =  "form-box-register">
-        <div class ="form-box1 register">
-        <h2>
-            Register
-        </h2>
+    <div class="form-box-register">
+        <div class="form-box1 register">
+            <h2>
+                Đăng ký
+            </h2>
 
-        <form action="#">
-            <div class = "input-box">
-            <input type="text"  required class = "user-password"> 
-            <label>User name</label>
-            </div>
-            <div class = "input-box">
-                <span class = "icon">
-                    
-                </span>
-            <input type="text"  required class = "user-password">
-            <label>Phone number</label>
-            </div>
-            <div class = "input-box">
-            <input type="text" class = "user-password" required>
-            <label>Password</label>
-            </div>
-            <div class= "login">
-                <button type="submit" class="btn-register">Register</button>
-            </div>
-            <div class="login-register">
-                <p>Don't have an account? <a href="#" class ="login-link" routerLink="/login">Login</a></p>
-            </div>
-        </form>
+            <form #userSignUp="ngForm" (ngSubmit)="signUp(userSignUp.value)">
+                <div class="input-box">
+                    <input type="text" name="name" required class="user-password" ngModel>
+                    <label>Tên khách hàng</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+
+                    </span>
+                    <input type="text" ngModel name="phone" required class="user-password">
+                    <label>Số điện thoại</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+
+                    </span>
+                    <input type="text" name="email" required class="user-password" ngModel>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" class="user-password" required name="password" ngModel>
+                    <label>Mật khẩu</label>
+                </div>
+                <div class="login">
+                    <button type="submit" class="btn-register">Register</button>
+                </div>
+                <div class="login-register">
+                    <p>Bạn đã có tài khoản? Hãy vào đây <a href="#" class="login-link" routerLink="/login">Đăng nhập</a></p>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
 </div>

@@ -1,5 +1,18 @@
-<div class="row">
-    <div class="col-md-4" *ngFor="let i of[1,2,3,4,5,6]">
-        <app-product-item></app-product-item>
+<div class="product-list-wrapper" style="margin: 8%;">
+    <div class="row">
+      <div class="col-sm-3" *ngFor="let item of trendyProducts">
+        <div class="product-item" style = "border-radius: 5px;">
+          <a routerLink="/details/{{item.id}}"><img src="{{item.image}}" alt=""></a>
+        <div class="product-details">
+          <h6 class="name-head">{{item.name}}</h6>
+          <div class="product-price">
+            <h6>Price:{{item.price}} VNĐ</h6>
+          </div>
+          <div style = "display: flex; ">
+            <h5 style = " text-align: center;display: flex;justify-content: center;align-items: center;margin-right: 20px;">Màu: </h5>
+            <h3 [style.backgroundColor]="item.color" class="product-color"></h3></div>
+        </div>
+        </div>
+      </div>    
     </div>
-</div>
+    </div>

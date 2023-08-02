@@ -12,15 +12,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { SellerAuthComponent } from './seller-auth/seller-auth.component';
 import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { ProductComponent } from './product/product.component';
-import { SignupSellerComponent } from './seller-auth/signup-seller/signup-seller.component';
 import { LoginComponent } from './login/login.component';
 
 import { RegisterComponent } from './register/register.component';
-
-import { ProductFiltersComponent } from './product/product-filters/product-filters.component';
 import { ProductListComponent } from './product/product-list/product-list.component';
 import { ProductItemComponent } from './product/product-list/product-item/product-item.component';
 import { CartComponent } from './cart/cart.component';
+import { CategoryComponent } from './category/category.component';
+import { SellerUpdateProductComponent } from './seller-update-product/seller-update-product.component';
+import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
+import { SearchComponent } from './search/search.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { OrderComponent } from './order/order.component';
+import { FilterPipe } from './filter.pipe';
 
 
 @NgModule({
@@ -32,20 +36,25 @@ import { CartComponent } from './cart/cart.component';
     SellerAuthComponent,
     SellerHomeComponent,
     ProductComponent,
-    SignupSellerComponent,
     LoginComponent,
     RegisterComponent,
-    ProductFiltersComponent,
     ProductListComponent,
     ProductItemComponent,
     CartComponent,
+    CategoryComponent,
+    SellerUpdateProductComponent,
+    SellerAddProductComponent,
+    SearchComponent,
+    CheckoutComponent,
+    OrderComponent,
+    FilterPipe,
 
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

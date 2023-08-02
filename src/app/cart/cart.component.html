@@ -1,34 +1,46 @@
-<div class="cart">
-    <h1>Giỏ hàng</h1>
-    <div class="row">
-        <div class="col-sm-8 details">
-            <ul>
+<div style = "width: 100%;margin-top: 5%;display: flex;">
+    <h3 style="text-align: center;width: 50%;padding-left: 10%;">Giỏ hàng</h3>
+    <h3 style="text-align: center;width: 50%;padding-left: 15%;"> Tiền thanh toán</h3>
+</div>
+<div class="cart-page">
+        
+        <div class="col-sm-8 details vien">
+            <ul *ngFor="let cart of cartData">
                 <li>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Left_side_of_Flying_Pigeon.jpg">
+                    <img src="{{cart.image}}" alt="">
+                   
                 </li>
-                <li>
-                    <span>Tên sản phẩm : Xe đạp</span>
+                <li class ='my_li'>
+                    <span> {{cart.name}}</span>
                 </li>
-                <li>
-                    <span>Giá : 10.000.000</span>
-                </li>  
-                <li>
-                    <span>Số lượng</span>
+                <li class ='my_li'>
+                    <span> Giá :{{cart.price}} đ</span>
                 </li>
-                <li>
-                    <button class="form-button">Xóa khỏi giỏ hàng</button>
+                <li class ='my_li'>
+                    <span > Số lượng : {{cart.quantity}}</span>
+               
+                </li>
+                <li class ='my_li'>
+                    <button class="form-button" (click)="removeToCart(cart.id)">Xóa khỏi giỏ </button>
                 </li>
             </ul>
-        </div> 
-        <div class="col-sm-4 summary">
-            <h3>Đơn hàng</h3>
-            <ul>
-                <li><span>Tiền hàng:</span><span>300</span></li>
-                <li><span>Thuế:</span><span>300</span></li>
-                <li><span>Tiền giao hàng:</span><span>300</span></li>
-                <li><span>Giảm giá:</span><span>300</span></li>
-                <li><span><h4>Tổng cộng:</h4></span><span>300</span></li>
-            </ul>
+
         </div>
+    
+    
+    <div class="col-sm-4 summary " >
+        
+        <ul>
+            <li> <span>Thành tiền: </span><span>{{priceSummary.price}} đ</span></li>
+            <li> <span>Thuế:</span><span>{{priceSummary.tax}} đ</span></li>
+            <li> <span>Phí giao hàng:</span><span>{{priceSummary.delivery}} đ</span></li>
+            <li> <span>Giảm giá:</span><span>{{priceSummary.discount}} đ</span></li>
+            <li> <span>
+                    <h4>Tổng tiền: </h4>
+                </span> <span>
+                    <h4>{{priceSummary.total}} đ</h4>
+                </span></li>
+            <button (click)="checkout()" class="form-button max-width">Thanh toán</button>
+        </ul>
     </div>
 </div>
