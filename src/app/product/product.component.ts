@@ -65,4 +65,5 @@ this.product.removeItemFromCart(productId)
     }
     this.removeCart=false
   }
+  
 }

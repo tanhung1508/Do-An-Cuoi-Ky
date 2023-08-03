@@ -1,6 +1,22 @@
+<div class="card-top container-fluid">
+  <div class="container d-flex">
+    <div class="item">
+      <a (click)="filter('Xe leo núi')">
+        <img src="https://cdn.tgdd.vn/Products/Images/9758/249913/mtb-gammax-24-quingwei-21s-hong-thumb-600x600.jpg">
+        <h5>Xe leo núi</h5>
+      </a>
+    </div>
+    <div class="item">
+      <a (click)="filter('Xe trẻ em')">
+        <img src="https://img.websosanh.vn/v2/users/review/images/o08p66fh8yswk.jpg?compress=85">
+        <h5>Xe trẻ em</h5>
+      </a>
+    </div>
+  </div>
+</div>
 <div class="product-list-wrapper" style="margin: 8%;">
     <div class="row">
-      <div class="col-sm-3" *ngFor="let item of trendyProducts">
+      <div class="col-sm-3" *ngFor="let item of filterCategory | search:searchKey">
         <div class="product-item" style = "border-radius: 5px;">
           <a routerLink="/details/{{item.id}}"><img src="{{item.image}}" alt=""></a>
         <div class="product-details">
