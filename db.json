@@ -180,6 +180,18 @@
       "productId": 3,
       "userId": 4,
       "id": 5
+    },
+    {
+      "name": "Fantic XEF 1.8",
+      "price": "4900",
+      "category": "Xe leo núi",
+      "color": "Green",
+      "description": "Fantic XEF 1.8 Sport 2022 - SRAM NX Eagle có kích thước khung S. Xe phù hợp với chiều cao cơ thể từ 158-173 cm.",
+      "image": "https://d1mgeijqpfaspl.cloudfront.net/uploads/bike/image_side/thumbs/1272/0fc8dce9-d6dd-4488-87dc-5066ab90fbd4.webp",
+      "quantity": 1,
+      "productId": 6,
+      "userId": 1,
+      "id": 6
     }
   ],
   "orders": []
