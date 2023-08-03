@@ -8,8 +8,10 @@ import { ProductService } from 'src/app/services/product.service';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit{
+  searchKey:string="";
+  filterCategory:any;
   popularProducts:undefined|product[];
-  trendyProducts:undefined | product[];
+  trendyProducts:any | product[];
   productData:undefined | product;
   productQuantity:number=1;
   removeCart=false;
@@ -24,9 +26,16 @@ export class ProductListComponent implements OnInit{
 
     this.product.trendyProducts().subscribe((data)=>{
       this.trendyProducts=data;
+      this.filterCategory=data;
     })
 
 
   }
-
+filter(category:string){
+  this.filterCategory=this.trendyProducts.filter((a:any)=>{
+    if(a.category==category||category==''){
+      return a;
+    }
+  })
+}
 }
