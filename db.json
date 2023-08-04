@@ -182,22 +182,5 @@
       "id": 5
     }
   ],
-  "orders": [
-    {
-      "email": "adas",
-      "address": "ádas",
-      "contact": 343,
-      "totalPrice": 36446.225,
-      "userId": 1,
-      "id": 2
-    },
-    {
-      "email": "asd",
-      "address": "sad",
-      "contact": 23,
-      "totalPrice": 31218.725,
-      "userId": 1,
-      "id": 3
-    }
-  ]
+  "orders": []
 }
