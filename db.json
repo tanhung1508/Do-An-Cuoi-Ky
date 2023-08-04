@@ -31,15 +31,6 @@
   ],
   "product": [
     {
-      "name": "Giant Giant XTC 329",
-      "price": "1000000",
-      "category": "Xe leo núi",
-      "color": "Blue",
-      "description": "Xe đạp Giant XTC Advanced 3 29″ 2022 - Shimano Deore có khung size S. Xe phù hợp với chiều cao từ 158-173 cm.",
-      "image": "https://d1mgeijqpfaspl.cloudfront.net/uploads/bike/image_side/thumbs/1272/64c0da6a7f588_k9ijjfspak.webp",
-      "id": 1
-    },
-    {
       "name": "Rabeneick TS10 Pinion",
       "price": "1229",
       "category": "Xe leo núi",
@@ -110,6 +101,15 @@
       "description": "gì cũng đc",
       "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/Left_side_of_Flying_Pigeon.jpg",
       "id": 11
+    },
+    {
+      "name": "dfas",
+      "price": "dasd",
+      "category": "Xe leo núi",
+      "color": "Yellow",
+      "description": "asd",
+      "image": "sd",
+      "id": 12
     }
   ],
   "users": [
@@ -180,19 +180,24 @@
       "productId": 3,
       "userId": 4,
       "id": 5
-    },
-    {
-      "name": "Fantic XEF 1.8",
-      "price": "4900",
-      "category": "Xe leo núi",
-      "color": "Green",
-      "description": "Fantic XEF 1.8 Sport 2022 - SRAM NX Eagle có kích thước khung S. Xe phù hợp với chiều cao cơ thể từ 158-173 cm.",
-      "image": "https://d1mgeijqpfaspl.cloudfront.net/uploads/bike/image_side/thumbs/1272/0fc8dce9-d6dd-4488-87dc-5066ab90fbd4.webp",
-      "quantity": 1,
-      "productId": 6,
-      "userId": 1,
-      "id": 6
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "email": "adas",
+      "address": "ádas",
+      "contact": 343,
+      "totalPrice": 36446.225,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "email": "asd",
+      "address": "sad",
+      "contact": 23,
+      "totalPrice": 31218.725,
+      "userId": 1,
+      "id": 3
+    }
+  ]
 }

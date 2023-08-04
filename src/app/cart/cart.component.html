@@ -31,14 +31,14 @@
     <div class="col-sm-4 summary " >
         
         <ul>
-            <li> <span>Thành tiền: </span><span>{{priceSummary.price}} đ</span></li>
-            <li> <span>Thuế:</span><span>{{priceSummary.tax}} đ</span></li>
-            <li> <span>Phí giao hàng:</span><span>{{priceSummary.delivery}} đ</span></li>
-            <li> <span>Giảm giá:</span><span>{{priceSummary.discount}} đ</span></li>
+            <li> <span>Thành tiền: </span><span>{{priceSummary.price | number:'1.0-0'}} VNĐ</span></li>
+            <li> <span>Thuế:</span><span>{{priceSummary.tax | number:'1.0-0'}} VNĐ</span></li>
+            <li> <span>Phí giao hàng:</span><span>{{priceSummary.delivery | number:'1.0-0'}} VNĐ</span></li>
+            <li> <span>Giảm giá:</span><span>{{priceSummary.discount | number:'1.0-0'}} VNĐ</span></li>
             <li> <span>
                     <h4>Tổng tiền: </h4>
                 </span> <span>
-                    <h4>{{priceSummary.total}} đ</h4>
+                    <h4>{{priceSummary.total | number:'1.0-0'}} VNĐ</h4>
                 </span></li>
             <button (click)="checkout()" class="form-button max-width">Thanh toán</button>
         </ul>

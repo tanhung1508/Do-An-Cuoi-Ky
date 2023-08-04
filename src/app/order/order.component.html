@@ -6,7 +6,7 @@
         color: red;
     }
 </style>
-<div class="my-orders" style="margin:50px 0px 20px 10px;border-bottom:1px solid black">
+<div class="my-orders" style="margin:50px 0px 20px 10px;">
     <h1>Đơn hàng của tôi</h1>
     <div class="row">
         <div class="col-sm-2">
@@ -25,7 +25,7 @@
            <span>Hủy đơn hàng</span>
         </div>
     </div>
-    <div class="row" *ngFor="let order of orderData">
+    <div class="row" *ngFor="let order of orderData" style = "border-bottom:1px solid black">
         <div class="col-sm-2">
             <img class="order-img" src="src/assets/images/img_gio_hang.jpg" alt="">
         </div>
@@ -33,7 +33,7 @@
             <span>#{{order.id}}</span>
         </div>
         <div class="col-sm-2 list" >
-            <span>{{order.totalPrice}} đ</span>
+            <span> {{order.totalPrice | number:'1.0-0' }} VNĐ</span>
         </div>
         <div class="col-sm-2 list">
             <span>Đang xử lí</span>

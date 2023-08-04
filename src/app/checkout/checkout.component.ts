@@ -13,6 +13,7 @@ export class CheckoutComponent implements OnInit {
   totalPrice: number | undefined;
   cartData: cart[] | undefined;
   orderMsg: string | undefined;
+  
   constructor(private product: ProductService, private router: Router) { }
 
   ngOnInit(): void {
@@ -25,7 +26,7 @@ export class CheckoutComponent implements OnInit {
           price = price + (+item.price * +item.quantity)
         }
       })
-      this.totalPrice = price + (price / 10) + 100 - (price / 10);
+      this.totalPrice = price + (price / 8) + 30000 - (price / 10);
 
       console.warn(this.totalPrice);
 
@@ -35,33 +36,38 @@ export class CheckoutComponent implements OnInit {
   orderNow(data: { email: string, address: string, contact: string }) {
     let user = localStorage.getItem('user');
     let userId = user && JSON.parse(user).id;
-    if (this.totalPrice) {
-      let orderData: order = {
-        ...data,
-        totalPrice: this.totalPrice,
-        userId,
-        id: undefined
-      }
+    
+        if (this.totalPrice) {
+          let orderData: order = {
+            ...data,
+            totalPrice: this.totalPrice,
+            userId,
+            id: undefined
+          }
 
-      this.cartData?.forEach((item) => {
-        setTimeout(() => {
-          item.id && this.product.deleteCartItems(item.id);
-        }, 700)
-      })
+          this.cartData?.forEach((item) => {
+            setTimeout(() => {
+              item.id && this.product.deleteCartItems(item.id);
+            }, 700)
+          })
 
-      this.product.orderNow(orderData).subscribe((result) => {
-        if (result) {
-          this.orderMsg = "Order has been placed";
-          setTimeout(() => {
-            this.orderMsg = undefined;
-            this.router.navigate(['/my-orders'])
-          }, 4000);
+          this.product.orderNow(orderData).subscribe((result) => {
+            if (result) {
+              this.orderMsg = "Đặt hàng thành công";
+              setTimeout(() => {
+                this.orderMsg = undefined;
+                this.router.navigate(['/my-orders'])
+              }, 4000);
 
-        }
+            }
 
-      })
+        })
     }
 
   }
+ }
 
-}
+
+
+
+

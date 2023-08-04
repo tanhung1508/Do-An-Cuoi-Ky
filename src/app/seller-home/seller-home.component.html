@@ -3,7 +3,7 @@
     <input [(ngModel)]="searchText" placeholder="Tìm kiếm sản phẩm"
         style="width: 300px;border: none; border-bottom: 2px solid #355764;" class="input-search">
     <p class="message-p">{{ productMessage }}</p>
-    <table>
+    <table style="margin-top: 50px;">
         <thead>
             <tr>
                 <th>Hình</th>
@@ -19,7 +19,7 @@
             <tr *ngFor="let item of productList | search :searchText">
                 <td><img src="{{ item.image }}" /></td>
                 <td src="#">{{ item.name }}</td>
-                <td>{{ item.price }} đ</td>
+                <td>{{ item.price | number:'1.0-0'}} VNĐ</td>
                 <td>{{ item.color }}</td>
                 <td>{{ item.category }}</td>
                 <td>{{ item.description }}</td>
