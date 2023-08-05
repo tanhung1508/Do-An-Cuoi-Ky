@@ -87,7 +87,7 @@
     {
       "name": "Coluer POISON SL",
       "price": "2000000",
-      "category": "Xe leo núi",
+      "category": "Xe trẻ em",
       "color": "White",
       "description": "Màu 2023 POISON SL - SRAM0 GX Eagle có khung size M. Xe phù hợp với chiều cao từ 163-178 cm.",
       "image": "https://d1mgeijqpfaspl.cloudfront.net/uploads/bike/image_side/thumbs/628/64c3777062d32_iq5e8xwbor.webp",
@@ -101,15 +101,6 @@
       "description": "gì cũng đc",
       "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/Left_side_of_Flying_Pigeon.jpg",
       "id": 11
-    },
-    {
-      "name": "dfas",
-      "price": "dasd",
-      "category": "Xe leo núi",
-      "color": "Yellow",
-      "description": "asd",
-      "image": "sd",
-      "id": 12
     }
   ],
   "users": [
