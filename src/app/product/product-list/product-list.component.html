@@ -1,49 +1,52 @@
-<style >
-  .category-item{
-
-    margin-left: 40px;
+<style>
+  img:hover{
+    display: block;
+      transform: scale(1.1);
+      transition: all 0.3s ease-in-out;
+      overflow: hidden;
+      margin-left: 5%;
+      width: 90%;
   }
 </style>
-    
 <div class="product-list-wrapper"  style = 'display: flex;'>
-  <div style = 'width: 20%;'>
+  <div style = 'width: 15%;'>
     <nav style = 'margin-top: 10%;'>
       <ul style = 'margin-left: -10px'>
         <div style="display: flex;">
-          <i class='bx bx-list-ul' style="width: 40px; font-size: 30px;margin-top: 3px;"></i>
-        <h2> Danh mục : </h2>
+          <i class='bx bx-list-ul' style=" font-size: 30px"></i>
+        <h4> Danh mục : </h4>
         </div>
         <li class = 'category-item '>
           <a (click)="filter('Xe leo núi')">
-            <h4>Xe đạp leo núi</h4>
+            <h6>Xe đạp leo núi</h6>
           </a>
         </li>
         <li class = 'category-item '>
           <a (click)="filter('Xe leo núi')">
-            <h4>Xe trẻ em</h4>
+            <h6>Xe trẻ em</h6>
           </a>
          </li>
          <li class = 'category-item '>
           <a (click)="filter('Xe leo núi')">
-            <h4>Xe giá rẽ</h4>
+            <h6>Xe giá rẽ</h6>
           </a>
          </li>
          <li class = 'category-item '>
           <a (click)="filter('Xe leo núi')">
-           <h4> Xe đạp gấp </h4>
+           <h6> Xe đạp gấp </h6>
           </a>
         </li>
 
       </ul>
     </nav>
   </div>
-  <div class="product-list-wrapper" style="margin: 45px 10px 0px 10px;width: 80%;" >
+  <div class="product-list-wrapper" style="margin: 30px 15px 0px 0px;width: 85%;" >
       <div class="row">
         <div class="col-sm-3" *ngFor="let item of trendyProducts">
           <div class="product-item" style = "border-radius: 5px;">
             <a routerLink="/details/{{item.id}}"><img src="{{item.image}}" alt=""></a>
           <div class="product-details">
-            <h6 class="name-head">{{item.name}}</h6>
+            <h6 class="name-head" routerLink="/details/{{item.id}}">{{item.name}}</h6>
             <div class="product-price">
               <h6>Giá tiền: {{ item.price | number:'1.0-0' }} VNĐ</h6>
             </div>

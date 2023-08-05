@@ -32,7 +32,7 @@
   "product": [
     {
       "name": "Rabeneick TS10 Pinion",
-      "price": "1229",
+      "price": "1229000",
       "category": "Xe leo núi",
       "color": "Black",
       "description": "Rabeneick Rabeneick TS10 Pinion 2020 - Khác có kích thước khung là 60. Xe phù hợp với chiều cao từ 183-193 cm.",
@@ -41,7 +41,7 @@
     },
     {
       "name": "NS ns bikes RAG 2",
-      "price": "1859",
+      "price": "1859000",
       "category": "Xe leo núi",
       "color": "Yellow",
       "description": "Xe đạp NS ns 2022 RAG 2 - SRAM Apex có kích thước khung M. Xe phù hợp với chiều cao từ 163-178 cm.",
@@ -50,7 +50,7 @@
     },
     {
       "name": "Whyte Whyte 805",
-      "price": "1189",
+      "price": "1189000",
       "category": "Xe leo núi",
       "color": "Black",
       "description": "Whyte Whyte 805 2022 - Shimano Deore có khung size M. Xe phù hợp với chiều cao từ 163-178 cm.",
@@ -59,7 +59,7 @@
     },
     {
       "name": "Evil Evil Bikes Force AXS",
-      "price": "1129",
+      "price": "1129000",
       "category": "Xe leo núi",
       "color": "Black",
       "description": "Evil Evil Bikes 2022 Chamois Hagar Force AXS - SRAM GX có kích thước khung XS. Xe đạp phù hợp với chiều cao 147-168 cm.",
@@ -68,7 +68,7 @@
     },
     {
       "name": "Fantic XEF 1.8",
-      "price": "4900",
+      "price": "4900000",
       "category": "Xe leo núi",
       "color": "Green",
       "description": "Fantic XEF 1.8 Sport 2022 - SRAM NX Eagle có kích thước khung S. Xe phù hợp với chiều cao cơ thể từ 158-173 cm.",
@@ -77,7 +77,7 @@
     },
     {
       "name": "Fantic XTF 1.6 Carbon",
-      "price": "5100",
+      "price": "5100000",
       "category": "Xe leo núi",
       "color": "Green",
       "description": "Fantic XTF 1.6 Carbon Sport 2022 - SRAM GX Eagle có kích thước khung M. Xe phù hợp với chiều cao cơ thể từ 163-178 cm.",
@@ -94,22 +94,13 @@
       "id": 10
     },
     {
-      "name": "Nguyễn Văn B",
-      "price": "100000",
-      "category": "Xe trẻ em",
+      "name": "Giant TCR Pro 1 - Giant ",
+      "price": "2960000",
+      "category": "Xe thể thao",
       "color": "Black",
-      "description": "gì cũng đc",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/Left_side_of_Flying_Pigeon.jpg",
+      "description": "Giant TCR Advanced Pro 1 2022 - Giant SLR Carbon - Shimano Ultegra có khung size S. Xe phù hợp với chiều cao từ 158-173 cm.",
+      "image": "https://d1mgeijqpfaspl.cloudfront.net/uploads/bike/image_side/thumbs/1272/64cccc1b18277_kkxvaugwgh.webp",
       "id": 11
-    },
-    {
-      "name": "dfas",
-      "price": "dasd",
-      "category": "Xe leo núi",
-      "color": "Yellow",
-      "description": "asd",
-      "image": "sd",
-      "id": 12
     }
   ],
   "users": [
@@ -154,6 +145,55 @@
       "email": "1",
       "password": "1",
       "id": 6
+    },
+    {
+      "name": "tin",
+      "phone": "01662529542",
+      "email": "tinh@gmail.com",
+      "password": "123tinh",
+      "id": 7
+    },
+    {
+      "name": "Oanh",
+      "phone": "01662529542",
+      "email": "1",
+      "password": "1",
+      "id": 8
+    },
+    {
+      "name": "a",
+      "phone": "01662529542",
+      "email": "123@gmail.com",
+      "password": "123",
+      "id": 9
+    },
+    {
+      "name": "nguyen van ",
+      "phone": "3333333333",
+      "email": "a@gmail.com",
+      "password": "123",
+      "id": 10
+    },
+    {
+      "name": "nguyen van ",
+      "phone": "3333333333",
+      "email": "a@gmail.com",
+      "password": "123",
+      "id": 11
+    },
+    {
+      "name": "nguyen van ",
+      "phone": "3333333333",
+      "email": "a@gmail.com",
+      "password": "123",
+      "id": 12
+    },
+    {
+      "name": "nguyen van a",
+      "phone": "9999999999",
+      "email": "h@gmail.com",
+      "password": "as",
+      "id": 13
     }
   ],
   "cart": [
@@ -170,17 +210,26 @@
       "id": 1
     },
     {
-      "name": "NS ns bikes RAG 2",
-      "price": "$1859",
-      "category": "Leo núi",
-      "color": "Yellow",
-      "description": "Xe đạp NS ns 2022 RAG 2 - SRAM Apex có kích thước khung M. Xe phù hợp với chiều cao từ 163-178 cm.",
-      "image": "https://d1mgeijqpfaspl.cloudfront.net/uploads/bike/image_side/thumbs/1272/64c0dc0f8bb4b_vvyurgds4u.webp",
+      "name": "Coluer POISON SL",
+      "price": "2000000",
+      "category": "Xe leo núi",
+      "color": "White",
+      "description": "Màu 2023 POISON SL - SRAM0 GX Eagle có khung size M. Xe phù hợp với chiều cao từ 163-178 cm.",
+      "image": "https://d1mgeijqpfaspl.cloudfront.net/uploads/bike/image_side/thumbs/628/64c3777062d32_iq5e8xwbor.webp",
       "quantity": 1,
-      "productId": 3,
-      "userId": 4,
-      "id": 5
+      "productId": 10,
+      "userId": 1,
+      "id": 6
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "email": "sa",
+      "address": "dá",
+      "contact": 3444,
+      "totalPrice": 31218.725,
+      "userId": 1,
+      "id": 1
+    }
+  ]
 }
