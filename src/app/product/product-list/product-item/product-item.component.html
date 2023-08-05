@@ -7,7 +7,7 @@
     <div class="col-sm-6">
         <div class="details">
             <h1>{{productData.name}}</h1>
-            <h3>Giá : {{productData.price}}</h3>
+            <h3>Giá : {{productData.price | number:'1.0-0'}} VNĐ</h3>
             <div style = "display: flex;">
                 <h5 style = " text-align: center;display: flex;justify-content: center;align-items: center;margin-right: 20px;">Màu: </h5>
                 <h3 [style.backgroundColor]="productData.color" class="product-color"></h3></div>

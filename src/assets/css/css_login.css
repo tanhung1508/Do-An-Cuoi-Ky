@@ -145,7 +145,7 @@ header {
 .form-box-register{
     position: relative;
     width: 400px;
-    height: 520px;
+    height: 580px;
     background: transparent;
     border: 2px solid rgba(255,255,255, .5);
     border-radius: 20px;
@@ -290,7 +290,7 @@ header {
 }
 
 .login .btn:hover{
-    background: #b0b4cc;
+    background:#4ca6c9;
     color:#fff
 }
 /* 
@@ -311,7 +311,7 @@ header {
 }
 
 .login .btn-register:hover{
-    background: #b0b4cc;
+    background:#4ca6c9;
     color:#fff
 }
 

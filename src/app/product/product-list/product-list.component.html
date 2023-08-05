@@ -1,34 +1,64 @@
-<div class="card-top container-fluid">
-  <div class="container d-flex">
-    <div class="item">
-      <a (click)="filter('Xe leo núi')">
-        <img src="https://cdn.tgdd.vn/Products/Images/9758/249913/mtb-gammax-24-quingwei-21s-hong-thumb-600x600.jpg">
-        <h5>Xe leo núi</h5>
-      </a>
-    </div>
-    <div class="item">
-      <a (click)="filter('Xe trẻ em')">
-        <img src="https://img.websosanh.vn/v2/users/review/images/o08p66fh8yswk.jpg?compress=85">
-        <h5>Xe trẻ em</h5>
-      </a>
-    </div>
+<style >
+  .category-item{
+
+    margin-left: 40px;
+  }
+</style>
+    
+<div class="product-list-wrapper"  style = 'display: flex;'>
+  <div style = 'width: 20%;'>
+    <nav style = 'margin-top: 10%;'>
+      <ul style = 'margin-left: -10px'>
+        <div style="display: flex;">
+          <i class='bx bx-list-ul' style="width: 40px; font-size: 30px;margin-top: 3px;"></i>
+        <h2> Danh mục : </h2>
+        </div>
+        <li class = 'category-item '>
+          <a style="cursor: pointer;" (click)="filter('Xe leo núi')">
+            <h4>Xe đạp leo núi</h4>
+          </a>
+        </li>
+        <li class = 'category-item '>
+          <a style="cursor: pointer;" (click)="filter('Xe trẻ em')">
+            <h4>Xe trẻ em</h4>
+          </a>
+         </li>
+         <li class = 'category-item '>
+          <a style="cursor: pointer;" (click)="filter('Xe thể thao')">
+            <h4>Xe giá rẻ</h4>
+          </a>
+         </li>
+         <li class = 'category-item '>
+          <a style="cursor: pointer;" (click)="filter('Xe đạp gấp')">
+           <h4> Xe đạp gấp </h4>
+          </a>
+        </li>
+
+      </ul>
+    </nav>
   </div>
-</div>
-<div class="product-list-wrapper" style="margin: 8%;">
-    <div class="row">
-      <div class="col-sm-3" *ngFor="let item of filterCategory | search:searchKey">
-        <div class="product-item" style = "border-radius: 5px;">
-          <a routerLink="/details/{{item.id}}"><img src="{{item.image}}" alt=""></a>
-        <div class="product-details">
-          <h6 class="name-head">{{item.name}}</h6>
-          <div class="product-price">
-            <h6>Price:{{item.price}} VNĐ</h6>
+  <div class="product-list-wrapper" style="margin: 45px 10px 0px 10px;width: 80%;" >
+      <div class="row">
+        <div class="col-sm-3" *ngFor="let item of filterCategory | search:searchKey">
+          <div class="product-item" style = "border-radius: 5px;">
+            <a routerLink="/details/{{item.id}}"><img src="{{item.image}}" alt=""></a>
+          <div class="product-details">
+            <h6 class="name-head">{{item.name}}</h6>
+            <div class="product-price">
+              <h6>Giá tiền: {{ item.price | number:'1.0-0' }} VNĐ</h6>
+            </div>
+            <!-- <div class="product-color">
+              <h6>Màu:{{item.color}}</h6>
+              
+            </div> -->
+            <div style = "display: flex;justify-content: center;margin-top: 20px; ">
+              <h5 style = " text-align: center;display: flex;justify-content: center;align-items: center;margin-right: 20px;">Màu: </h5>
+              <h3 [style.backgroundColor]="item.color" class="product-color"></h3></div>
           </div>
-          <div style = "display: flex; ">
-            <h5 style = " text-align: center;display: flex;justify-content: center;align-items: center;margin-right: 20px;">Màu: </h5>
-            <h3 [style.backgroundColor]="item.color" class="product-color"></h3></div>
+          </div>
+        
         </div>
-        </div>
-      </div>    
+      </div>
+      
     </div>
-    </div>
+</div>

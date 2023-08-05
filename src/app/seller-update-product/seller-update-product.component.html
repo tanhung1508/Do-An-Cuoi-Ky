@@ -1,3 +1,9 @@
+<style>
+    .form-input {
+        border: 1px solid black;
+        border-radius: 5px
+    }
+</style>
 <div class="update-product" style="margin: 4%;">
     <h1>Cập nhật sản phẩm</h1>
     <p class="message-p">{{productMessage}}</p>
@@ -11,6 +17,7 @@
             <option value="Xe leo núi">Xe leo núi</option>
             <option value="Xe trẻ em">Xe trẻ em</option>
             <option value="Xe thể thao">Xe thể thao</option>
+            <option value="Xe đạp gấp">Xe đạp gấp</option>
         </select>
         <select class="form-input" id="myDropdown" onchange="updateDropdownName(this)" ngModel="{{productData?.color}}"
             name="color" placeholder="Chọn màu sản phẩm">
@@ -25,6 +32,6 @@
 
         <input type="text" class="form-input" placeholder="Nhập URL hình ảnh" name="image"
             ngModel="{{productData?.image}}" />
-        <button class="form-button">Update Product</button>
+        <button class="form-button">Thêm sản phẩm</button>
     </form>
 </div>
