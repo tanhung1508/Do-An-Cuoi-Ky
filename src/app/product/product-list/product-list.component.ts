@@ -16,7 +16,8 @@ export class ProductListComponent implements OnInit{
   productQuantity:number=1;
   removeCart=false;
   cartData:product|undefined;
-
+  totalRecords:any|String;
+  page:any|Number=1;
   constructor(private product:ProductService) {}
 
   ngOnInit(): void {

@@ -25,8 +25,7 @@ import { SearchComponent } from './search/search.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { OrderComponent } from './order/order.component';
 import { FilterPipe } from './filter.pipe';
-
-
+import{NgxPaginationModule} from 'ngx-pagination';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,6 +54,7 @@ import { FilterPipe } from './filter.pipe';
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
