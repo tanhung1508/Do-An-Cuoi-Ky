@@ -57,7 +57,7 @@ export class CheckoutComponent implements OnInit {
               setTimeout(() => {
                 this.orderMsg = undefined;
                 this.router.navigate(['/my-orders'])
-              }, 4000);
+              }, 2000);
 
             }
 

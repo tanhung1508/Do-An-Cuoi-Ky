@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { UserService } from '../services/user.service';
 import { ProductService } from '../services/product.service';
 import { cart, login, product, signUp } from '../data-type';
+import { Data } from '@angular/router';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-register',
@@ -16,10 +18,11 @@ export class RegisterComponent implements OnInit{
   ngOnInit(): void {
     this.user.userAuthReload();
   }
-
+ 
   signUp(data: signUp) {
     this.user.userSignUp(data);
   }
+  
   login(data: login) {
     this.user.userLogin(data)
     this.user.invalidUserAuth.subscribe((result)=>{

@@ -4,7 +4,7 @@
 </div>
 <div class="cart-page">
         
-        <div class="col-sm-8 details vien">
+        <div class="col-sm-8 details vien" style="margin-left: 10px;">
             <ul *ngFor="let cart of cartData">
                 <li>
                     <img src="{{cart.image}}" alt="">
@@ -14,7 +14,7 @@
                     <span> {{cart.name}}</span>
                 </li>
                 <li class ='my_li'>
-                    <span> Giá :{{cart.price}} đ</span>
+                    <span> Giá :{{cart.price  | number:'1.0-0'}} VNĐ</span>
                 </li>
                 <li class ='my_li'>
                     <span > Số lượng : {{cart.quantity}}</span>
@@ -38,7 +38,7 @@
             <li> <span>
                     <h4>Tổng tiền: </h4>
                 </span> <span>
-                    <h4>{{priceSummary.total | number:'1.0-0'}} VNĐ</h4>
+                    <h4> {{priceSummary.total | number:'1.0-0'}} VNĐ</h4>
                 </span></li>
             <button (click)="checkout()" class="form-button max-width">Thanh toán</button>
         </ul>
