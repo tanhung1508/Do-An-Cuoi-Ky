@@ -31,11 +31,20 @@ export class ProductListComponent implements OnInit{
 
 
   }
-filter(category:string){
-  this.filterCategory=this.trendyProducts.filter((a:any)=>{
-    if(a.category==category||category==''){
-      return a;
-    }
-  })
+// filter(category:string){
+//   this.filterCategory=this.trendyProducts.filter((a:any)=>{
+//     if(a.category==category||category==''){
+//       return a;
+//     }
+//   })
+// }
+filter(category: string) {
+  if (category === '') {
+    this.filterCategory = this.trendyProducts;
+  } else {
+    this.filterCategory = this.trendyProducts.filter((a: any) => {
+      return a.category === category;
+    });
+  }
 }
 }
