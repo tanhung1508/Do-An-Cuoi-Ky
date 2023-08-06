@@ -14,8 +14,28 @@
         <h2> Danh mục : </h2>
         </div>
         <li class = 'category-item '>
-          <a style="cursor: pointer;" (click)="filter('Xe leo núi')">
+          <a style="cursor: pointer;" (click)="filter('Xe đạp leo núi')">
             <h4>Xe đạp leo núi</h4>
+          </a>
+        </li>
+        <li class = 'category-item '>
+          <a style="cursor: pointer;" (click)="filter('Xe đạp đua')">
+            <h4>Xe đạp đua</h4>
+          </a>
+        </li>
+        <li class = 'category-item '>
+          <a style="cursor: pointer;" (click)="filter('Xe đạp đường phố')">
+            <h4>Xe đạp đường phố</h4>
+          </a>
+        </li>
+        <li class = 'category-item '>
+          <a style="cursor: pointer;" (click)="filter('Xe đạp biểu diễn')">
+            <h4>Xe đạp biểu diễn</h4>
+          </a>
+        </li>
+        <li class = 'category-item '>
+          <a style="cursor: pointer;" (click)="filter('Xe đạp không phanh')">
+            <h4>Xe đạp không phanh</h4>
           </a>
         </li>
         <li class = 'category-item '>
@@ -24,7 +44,7 @@
           </a>
          </li>
          <li class = 'category-item '>
-          <a style="cursor: pointer;" (click)="filter('Xe thể thao')">
+          <a style="cursor: pointer;" (click)="filter('Xe giá rẻ')">
             <h4>Xe giá rẻ</h4>
           </a>
          </li>
@@ -39,7 +59,10 @@
   </div>
   <div class="product-list-wrapper" style="margin: 45px 10px 0px 10px;width: 80%;" >
       <div class="row">
-        <div class="col-sm-3" *ngFor="let item of filterCategory | search:searchKey">
+        <div class="col-sm-3" *ngFor="let item of filterCategory | search:searchKey | paginate:{id:'listing-pagination',
+      itemsPerPage:8,
+      currentPage:page,
+      totalItems:totalRecords}">
           <div class="product-item" style = "border-radius: 5px;">
             <a routerLink="/details/{{item.id}}"><img src="{{item.image}}" alt=""></a>
           <div class="product-details">
@@ -60,5 +83,8 @@
         </div>
       </div>
       
+    </div>
+    <div>
+      <pagination-controls id="listing-pagination" (pageChange)="page=$event"></pagination-controls>
     </div>
 </div>

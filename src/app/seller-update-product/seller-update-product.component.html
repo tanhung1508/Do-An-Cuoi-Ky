@@ -14,18 +14,25 @@
             ngModel="{{productData?.price}}" />
         <select class="form-input" id="myDropdown" onchange="updateDropdownName(this)"
             ngModel="{{productData?.category}}" name="category" placeholder="Chọn loại sản phẩm">
-            <option value="Xe leo núi">Xe leo núi</option>
+            <option value="Xe đạp leo núi">Xe đạp leo núi</option>
+            <option value="Xe đạp đua">Xe đạp đua</option>
+            <option value="Xe đạp đường phố">Xe đạp đường phố</option>
+            <option value="Xe đạp biểu diễn">Xe đạp biểu diễn</option>
+            <option value="Xe đạp không phanh">Xe đạp không phanh</option>
             <option value="Xe trẻ em">Xe trẻ em</option>
-            <option value="Xe thể thao">Xe thể thao</option>
             <option value="Xe đạp gấp">Xe đạp gấp</option>
+            <option value="Xe giá rẻ">Xe giá rẻ</option>
         </select>
         <select class="form-input" id="myDropdown" onchange="updateDropdownName(this)" ngModel="{{productData?.color}}"
             name="color" placeholder="Chọn màu sản phẩm">
             <option value="Blue">Blue</option>
             <option value="Black">Black</option>
+            <option value="Gray">Gray</option>
             <option value="Yellow">Yellow</option>
             <option value="Green">Green</option>
             <option value="White">White</option>
+            <option value="Gold">Gold</option>
+            <option value="Red">Red</option>
         </select>
         <textarea type="text" class="form-input" placeholder="Nhập mô tả sản phẩm" name="description"
             ngModel="{{productData?.description}}"></textarea>
