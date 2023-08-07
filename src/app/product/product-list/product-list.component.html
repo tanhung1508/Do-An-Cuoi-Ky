@@ -1,27 +1,29 @@
-<style >
-  .category-item{
+<style>
+  .category-item {
 
     margin-left: 30px;
   }
-  img{
+
+  img {
     display: block;
     max-width: 100%;
     transition: all 0.3s ease-in-out;
     overflow: hidden;
 
   }
-  img:hover{
+
+  img:hover {
     transform: scale(1.1);
   }
 </style>
-    
-<div class="product-list-wrapper"  style = 'display: flex;'>
-  <div style = 'width: 15%;'>
-    <nav style = 'margin-top: 10%;'>
-      <ul style = 'margin-left: -10px'>
+
+<div class="product-list-wrapper" style='display: flex;'>
+  <div style='width: 20%;'>
+    <nav style='margin-top: 10%;'>
+      <ul style='margin-left: -10px'>
         <div style="display: flex;">
           <i class='bx bx-list-ul' style=" font-size: 30px;margin-top: 2px;"></i>
-        <h3>Danh mục:</h3>
+          <h3>Danh mục:</h3>
         </div>
 
         <li class="category-item">
@@ -30,68 +32,66 @@
           </a>
         </li>
 
-        <li class = 'category-item '>
+        <li class='category-item '>
           <a style="cursor: pointer;" (click)="filter('Xe đạp leo núi')">
-            <h4>Xe đạp leo núi</h4>
+            <h5>Xe đạp leo núi</h5>
           </a>
         </li>
-        <li class = 'category-item '>
+        <li class='category-item '>
           <a style="cursor: pointer;" (click)="filter('Xe đạp đua')">
-            <h4>Xe đạp đua</h4>
+            <h5>Xe đạp đua</h5>
           </a>
         </li>
-        <li class = 'category-item '>
+        <li class='category-item '>
           <a style="cursor: pointer;" (click)="filter('Xe đạp đường phố')">
-            <h4>Xe đạp đường phố</h4>
+            <h5>Xe đạp đường phố</h5>
           </a>
         </li>
-        <li class = 'category-item '>
+        <li class='category-item '>
           <a style="cursor: pointer;" (click)="filter('Xe đạp biểu diễn')">
-            <h4>Xe đạp biểu diễn</h4>
+            <h5>Xe đạp biểu diễn</h5>
           </a>
         </li>
-        <li class = 'category-item '>
+        <li class='category-item '>
           <a style="cursor: pointer;" (click)="filter('Xe đạp không phanh')">
-            <h4>Xe đạp không phanh</h4>
+            <h5>Xe đạp không phanh</h5>
           </a>
         </li>
-        <li class = 'category-item '>
-          <a style="cursor: pointer;" (click)="filter('Xe trẻ em')">
-            <h4>Xe trẻ em</h4>
-          </a>
-         </li>
-         <li class = 'category-item '>
+        <li class='category-item '>
           <a style="cursor: pointer;" (click)="filter('Xe đạp gấp')">
-           <h5>Xe đạp gấp</h5>
+            <h5>Xe đạp gấp</h5>
           </a>
         </li>
 
       </ul>
     </nav>
   </div>
-  <div class="product-list-wrapper" style="margin: 30px 10px 0px 15px;width: 85%;" >
-      <div class="row">
-        <div class="col-sm-3" *ngFor="let item of filterCategory | search:searchKey | paginate:{id:'listing-pagination',
+  <div class="product-list-wrapper" style="margin: 30px 10px 0px 15px;width: 85%;">
+    <div class="row">
+      <div class="col-sm-3" *ngFor="let item of filterCategory | search:searchKey | paginate:{id:'listing-pagination',
       itemsPerPage:8,
       currentPage:page,
       totalItems:totalRecords}">
-          <div class="product-item" style = "border-radius: 5px;">
-            <a routerLink="/details/{{item.id}}"><img src="{{item.image}}" alt=""></a>
+        <div class="product-item" style="border-radius: 5px;">
+          <a routerLink="/details/{{item.id}}"><img src="{{item.image}}" alt=""></a>
           <div class="product-details">
             <h5 class="name-head" routerLink="/details/{{item.id}}" style="text-align: center;">{{item.name}}</h5>
             <div class="product-price">
-              <h6>Giá tiền: {{ item.price | number:'1.0-0' }} VNĐ</h6>
+              <h5>Giá tiền: {{ item.price | number:'1.0-0' }} VNĐ</h5>
             </div>
-            <div style = "display: flex;justify-content: center;margin-top: 20px; ">
-              <h5 style = " text-align: center;display: flex;justify-content: center;align-items: center;margin-right: 20px;">Màu: </h5>
-              <h3 [style.backgroundColor]="item.color" class="product-color"></h3></div>
+            <div style="display: flex;justify-content: center;margin-top: 20px; ">
+              <h5
+                style=" text-align: center;display: flex;justify-content: center;align-items: center;margin-right: 20px;">
+                Màu: </h5>
+              <h3 [style.backgroundColor]="item.color" class="product-color"></h3>
+            </div>
           </div>
-          </div>
-        </div>
-        <div class="paging">
-          <pagination-controls id="listing-pagination" (pageChange)="page=$event"></pagination-controls>
         </div>
       </div>
+      <div class="paging">
+        <pagination-controls id="listing-pagination" (pageChange)="page=$event"></pagination-controls>
+      </div>
     </div>
+  </div>
 
 </div>

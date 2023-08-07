@@ -110,6 +110,7 @@ h5:hover{
     color:#5874bb;
 }
 .category-item{
+    border: 1px solid;
     margin-left: 30px;
 }
 .paging{
