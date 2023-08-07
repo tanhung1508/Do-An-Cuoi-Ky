@@ -216,7 +216,7 @@
     },
     {
       "name": "Fornix BF200 2023",
-      "price": "",
+      "price": "1869000",
       "category": "Xe đạp không phanh",
       "color": "Red",
       "description": "Xe đạp Fixed Gear BF200 là phiên bản nâng cấp 2023 từ mẫu tiền nhiệm vốn đã rất quen thuộc với các bạn trẻ là BF100 ra mắt năm 2018. Đây là mẫu xe đạp Fixed Gear cao cấp tới từ thương hiệu xe đạp uy tín Fornix International, với mẫu BF200 nhà sản xuất đã đưa ra một loạt cải tiến đáng ra từng xu mà người dùng phải bỏ ra, như trọng lượng khung thép hợp kim (tối ưu 15% trọng lượng xe), bộ xích KB250 với sức kéo tới 2500N và tuổi thọ lên tới trên 5 năm sử dụng, xe cũng được trang bị phanh trước để tăng tính năng an toàn cho người dùng.",
@@ -335,6 +335,30 @@
       "totalPrice": 1935475,
       "userId": 2,
       "id": 1
+    },
+    {
+      "email": "t@gmail.com",
+      "address": "s",
+      "contact": "1234567899",
+      "totalPrice": 3195200,
+      "userId": 4,
+      "id": 2
+    },
+    {
+      "email": "hung123@gmail.com",
+      "address": "wr",
+      "contact": "5555555555",
+      "totalPrice": 1248725,
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "email": "hung123@gmail.com",
+      "address": "w",
+      "contact": "5555555555",
+      "totalPrice": 1248725,
+      "userId": 1,
+      "id": 4
     }
   ]
 }
