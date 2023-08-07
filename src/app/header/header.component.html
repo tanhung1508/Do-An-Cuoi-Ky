@@ -32,9 +32,8 @@
 </style>
  
 <header>
-      <img src="assets/images/logo.png" style ="padding-bottom: 2%;">
       <nav class="navigation " style="margin-right: auto;padding-left: 5%;">
-        <a routerLink=""  >Trang chủ</a>
+        <a routerLink=""><img src="assets/images/logo.png" style ="padding-bottom: 2%;"></a>
       </nav>
   <div *ngIf="menuType!=='seller'" class="nav-search" style="margin-right: auto;width: 40%;">
     <input type="text" #searchInput (keyup)="searchProduct($event)" (blur)="hideSearch()"

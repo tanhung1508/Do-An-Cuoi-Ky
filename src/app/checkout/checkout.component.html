@@ -30,7 +30,7 @@
           <p *ngIf="contact.errors?.['required']" class="danger">Không được để trống</p>
           <p *ngIf="contact.errors?.['pattern']" class="danger">SĐT không hợp lệ!</p>
       </div>
-        <input type="number" class="form-input" ngModel name="contact" placeholder="Nhập số điện thoại liên lạc" required pattern="^[0-9]{10}$" #contact="ngModel"/>
+        <input type="text" class="form-input" ngModel name="contact" placeholder="Nhập số điện thoại liên lạc" required pattern="^[0-9]{10}$" #contact="ngModel"/>
         <button class="form-button" [disabled]="orderData.invalid">Đặt hàng ngay</button>
       </form>
     </div>

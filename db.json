@@ -278,33 +278,7 @@
       "id": 32
     },
     {
-      "name": "FORNIX R24",
-      "price": "1958727",
-      "category": "Xe giá rẻ",
-      "color": "Black",
-      "description": "Fornix nổi tiếng với nhiều mẫu xe có chất lượng và độ hoàn thiện cao. Điển hình là mẫu xe đạp địa hình MTB Fornix R24 24 inch với thiết kế mạnh mẽ và hầm hố, nổi bật cùng các phiên bản màu sắc trẻ trung, hợp thị hiếu giới trẻ. (Các phiên bản màu của xe còn hàng tùy theo khu vực và thời điểm, bài viết sử dụng hình ảnh phiên bản đen đỏ để minh họa).",
-      "image": "https://cdn.tgdd.vn/Products/Images/9758/242879/mtb-fornix-r24-24-inch-den-do-1-700x467.jpg",
-      "id": 33
-    },
-    {
-      "name": "GAMMAX 26-FENGJUN-2.0-24S",
-      "price": "5154000",
-      "category": "Xe giá rẻ",
-      "color": "White",
-      "description": "Sở hữu kiểu dáng mạnh mẽ, cá tính, đậm chất thể thao địa hình cùng khối lượng 19.3 kg, xe đạp địa hình MTB Gammax 26-FENGJUN-2.0-24S 2020 26 inch không chỉ thích hợp để tập luyện thể thao tăng cường sức khỏe mà còn là chiến mã không thể thiếu cùng bạn trên mỗi chặng đua kịch tính. Mẫu xe có nhiều phiên bản màu và còn hàng tùy khu vực, thời điểm, bài viết sử dụng phiên bản trắng để minh họa.",
-      "image": "https://cdn.tgdd.vn/Products/Images/9758/249925/mtb-gammax-26-fengjun-2-0-24s-2020-trang-den-glr-1-1-700x467.jpg",
-      "id": 34
-    },
-    {
-      "name": "Thống Nhất GN 06-24",
-      "price": "1502182",
-      "category": "Xe giá rẻ",
-      "color": "Blue",
-      "description": "Xe đạp đường phố City Thống Nhất GN 06-24 mang nét trẻ trung, hiện đại với các phiên bản màu trẻ trung càng tôn thêm vẻ cứng cáp, mạnh mẽ. Xe này phù hợp với các bạn học sinh cấp 2 hoặc các chị em, sử dụng tiện lợi để đi học, đi làm hay đi dạo. Mẫu xe đường phố này của hãng xe đạp Thống Nhất thuộc thương hiệu Việt Nam liên tiếp đạt giải Thương hiệu Quốc gia trong 10 năm gần đây. ",
-      "image": "https://cdn.tgdd.vn/Products/Images/9758/241633/gn-06-24-24-inch-xanh-duong-1-1-700x467.jpg",
-      "id": 35
-    },
-    {"name": "Men's Mini Bike ES97",
+      "name": "Men's Mini Bike ES97",
       "price": "970000",
       "category": "Xe đạp trẻ em",
       "color": "Black",
@@ -352,19 +326,15 @@
       "id": 14
     }
   ],
-  "cart": [
+  "cart": [],
+  "orders": [
     {
-      "name": "Nguyễn Tấn Hưng",
-      "price": "100000",
-      "category": "xe",
-      "color": "xanh",
-      "description": "pleple",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/Left_side_of_Flying_Pigeon.jpg",
-      "quantity": 1,
-      "productId": 1,
+      "email": "hung123@gmail.com",
+      "address": "233/8 Vĩnh Viễn P4 Q10",
+      "contact": "0917005936",
+      "totalPrice": 1935475,
       "userId": 2,
       "id": 1
     }
-  ],
-  "orders": []
+  ]
 }

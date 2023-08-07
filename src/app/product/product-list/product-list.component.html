@@ -61,11 +61,6 @@
           </a>
          </li>
          <li class = 'category-item '>
-          <a style="cursor: pointer;" (click)="filter('Xe giá rẻ')">
-            <h4>Xe giá rẻ</h4>
-          </a>
-         </li>
-         <li class = 'category-item '>
           <a style="cursor: pointer;" (click)="filter('Xe đạp gấp')">
            <h5>Xe đạp gấp</h5>
           </a>
@@ -92,12 +87,11 @@
               <h3 [style.backgroundColor]="item.color" class="product-color"></h3></div>
           </div>
           </div>
-        
+        </div>
+        <div class="paging">
+          <pagination-controls id="listing-pagination" (pageChange)="page=$event"></pagination-controls>
         </div>
       </div>
-      
     </div>
-    <div>
-      <pagination-controls id="listing-pagination" (pageChange)="page=$event"></pagination-controls>
-    </div>
+
 </div>
